@@ -1,36 +1,61 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CustomCursor : MonoBehaviour {
-  public Sprite sprHover;
-  public Color clrHover;
+public class CustomCursor : MonoBehaviour
+{
+    public Sprite sprHover;
+    public Color clrHover;
 
-  private InputSystem_Actions input;
-  private Sprite sprDefault;
-  private Color clrDefault;
-  private Image img;
+    private InputSystem_Actions input;
+    private Sprite sprDefault;
+    private Color clrDefault;
+    private Image img;
+    private Renderer lastRendererHoveredOver;
+    private Color defaultColorOfLastHoveredObject;
 
-  private void Awake() {
-    img = GetComponent<Image>();
-    sprDefault = img.sprite;
-    clrDefault = img.color;
-    input = new();
-    input.Enable();
-    input.UI.Enable();
-  }
+    // use const for primitive types, non primitive types
+    private readonly Color CLR_OF_HOVERED_OBJ = Color.cyan; 
 
-  private void Update() {
-    img.sprite = sprDefault;
-    img.color = clrDefault;
-    var ray = Camera.main.ScreenPointToRay(transform.position);
-    if (Physics.Raycast(ray, out RaycastHit hit, 100)) {
-      if (hit.collider.CompareTag("Clickable")) {
-        img.sprite = sprHover;
-        img.color = clrHover;
-      }
-      if (input.UI.Click.WasPressedThisFrame()) {
-        hit.collider.gameObject.SendMessage("Grab", SendMessageOptions.DontRequireReceiver);
-      }
+    private void Awake()
+    {
+        img = GetComponent<Image>();
+        sprDefault = img.sprite;
+        clrDefault = img.color;
+        input = new();
+        input.Enable();
+        input.UI.Enable();
+        lastRendererHoveredOver = null;
     }
-  }
+
+    private void Update()
+    {
+        img.sprite = sprDefault;
+        img.color = clrDefault;
+        if(lastRendererHoveredOver != null)
+        {
+            lastRendererHoveredOver.material.color = Color.white; 
+        }
+        var ray = Camera.main.ScreenPointToRay(transform.position);
+        if (Physics.Raycast(ray, out RaycastHit hit, 100))
+        {
+            if (hit.collider.CompareTag("Clickable"))
+            {
+                img.sprite = sprHover;
+                img.color = clrHover;
+                var ren = hit.collider.gameObject.GetComponent<Renderer>();
+                if (ren != null)
+                {
+                    lastRendererHoveredOver = ren;
+                    // in case default color is not white
+                    defaultColorOfLastHoveredObject = ren.material.color;
+                    //ren.material.color = CLR_OF_HOVERED_OBJ; 
+                    ren.material.SetColor("_BaseColor", CLR_OF_HOVERED_OBJ); 
+                }
+            }
+            if (input.UI.Click.WasPressedThisFrame())
+            {
+                hit.collider.gameObject.SendMessage("Grab", SendMessageOptions.DontRequireReceiver);
+            }
+        }
+    }
 }
