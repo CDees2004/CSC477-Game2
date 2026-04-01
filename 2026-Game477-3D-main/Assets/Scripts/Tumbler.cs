@@ -1,5 +1,5 @@
 using System;
-using System.Collections; 
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using State = TumblerState;
@@ -28,7 +28,8 @@ public class Tumbler : MonoBehaviour
     private Quaternion targetRot;
     private float t;
 
-    private Coroutine tumblingCouroutine; 
+    private Coroutine tumblingCouroutine;
+
 
     private void Start()
     {
@@ -74,27 +75,25 @@ public class Tumbler : MonoBehaviour
         {
             stateStayMethods[State].Invoke();
         }
-        Tumble(); 
+        Tumble();
     }
 
 
     private IEnumerator Tumble()
     {
-        while(t < 1)
+        while (t < 1)
         {
             t += 1 * Time.deltaTime;
-            transform.rotation = Quaternion.Lerp(curRot, targetRot, t); 
-            yield return new WaitForEndOfFrame(); 
+            transform.rotation = Quaternion.Lerp(curRot, targetRot, t);
+            yield return new WaitForEndOfFrame();
         }
         transform.rotation = targetRot;
-        ChangeState(State.IDLE); 
+        ChangeState(State.IDLE);
     }
-
 
     //public int GetNumber() {
     //  return number + 1;
     //}
-
 
     public int GetNumber() => number + 1;
 
@@ -118,7 +117,8 @@ public class Tumbler : MonoBehaviour
         curRot = transform.rotation;
         targetRot = curRot * Quaternion.Euler(Vector3.up * (360 / numberOfSides));
         t = 0;
-        tumblingCouroutine = StartCoroutine(Tumble()); 
+        SoundManager.Play(SoundType.TUMBLE); 
+        tumblingCouroutine = StartCoroutine(Tumble());
     }
 
     private void StateEnter_TumblingDown()
@@ -126,6 +126,7 @@ public class Tumbler : MonoBehaviour
         curRot = transform.rotation;
         targetRot = curRot * Quaternion.Euler(Vector3.down * (360 / numberOfSides));
         t = 0;
+        SoundManager.Play(SoundType.TUMBLE);
         StartCoroutine(Tumble());
     }
 
@@ -141,7 +142,7 @@ public class Tumbler : MonoBehaviour
 
     private void StateStay_TumblingUp()
     {
-  
+
     }
 
     private void StateStay_TumblingDown()
