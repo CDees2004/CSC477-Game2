@@ -1,5 +1,8 @@
+using NUnit.Framework;
 using UnityEngine;
 using GameState = FsmGameState;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement; 
 
 public enum FsmGameState
 {
@@ -16,13 +19,21 @@ public class GameManager : MonoBehaviour
 {
     // singleton because management script
     public static GameManager Instance { get; private set; }
-
     public GameState GameState { get; private set; }
+    // set in inspector 
+    public GameObject pausedPanelUI;
+    public int totalPuzzles = 4;
+
+    private HashSet<string> completedPuzzles = new HashSet<string>();
+
 
     private void Start()
     {
         GameState = GameState.MainMenu;
+        Instance = this;
+        DontDestroyOnLoad(gameObject); // making the GameManager persist across scenes
     }
+
 
     private void Update()
     {
@@ -34,12 +45,46 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.Playing:
-                break; 
+                Time.timeScale = 1.0f;
+                pausedPanelUI.SetActive(false); 
+                break;
+
+            case GameState.Paused:
+                Time.timeScale = 0.0f;
+                pausedPanelUI.SetActive(true); 
+                break;
+
+            case GameState.GameOver:
+                // do whatever and go to the gameover screen
+                SceneManager.LoadScene("GameOver"); 
+                break;
+
+            case GameState.Win:
+                // do whatever and go to the win screen
+                SceneManager.LoadScene("Escaped");
+                break;
         }
     }
 
+
     public void ChangeState(GameState newState)
     {
-        GameState = newState; 
+        GameState = newState;
+    }
+
+
+    public void MarkPuzzleComplete(string puzzleName)
+    {
+        completedPuzzles.Add(puzzleName);
+        CheckWinCondition(); 
+    }
+
+
+    public void CheckWinCondition()
+    {
+        if(completedPuzzles.Count >= totalPuzzles)
+        {
+            ChangeState(FsmGameState.Win); 
+        }
     }
 }
