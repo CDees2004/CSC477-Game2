@@ -22,13 +22,13 @@ public class SceneController : MonoBehaviour
 
 
     // making these helpers to avoid rewriting this stuff a ton
-    public void LoadMainRoom()
+    public static void LoadMainRoom()
     {
         SceneManager.LoadScene("MainRoom"); 
     }
 
     
-    public void LoadPuzzleRoom(string roomName)
+    public static void LoadPuzzleRoom(string roomName)
     {
         SceneManager.LoadScene(roomName);
     }

@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainRoom.unity
     guid: 6e0ce6835e9175548b98131681c32084
   - enabled: 1
-    path: Assets/Scenes/ChandlerTestRoom.unity
+    path: Assets/Scenes/ChandlerRoom.unity
     guid: 3ea19bc68bc81f24d90b48b11d50fc6a
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
