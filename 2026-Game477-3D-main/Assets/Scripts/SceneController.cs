@@ -24,10 +24,5 @@ public class SceneController : MonoBehaviour
     private void Start()
     {
 
-
-
-
-
-
     }
 }

@@ -14,6 +14,9 @@ public enum FsmGameState
 // handles game state and other managers 
 public class GameManager : MonoBehaviour
 {
+    // singleton because management script
+    public static GameManager Instance { get; private set; }
+
     public GameState GameState { get; private set; }
 
     private void Start()
@@ -33,5 +36,10 @@ public class GameManager : MonoBehaviour
             case GameState.Playing:
                 break; 
         }
+    }
+
+    public void ChangeState(GameState newState)
+    {
+        GameState = newState; 
     }
 }
