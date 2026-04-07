@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
         {
             case GameState.MainMenu:
                 // main menu logic 
+                // initial scene shouldn't need anything
                 break;
 
             case GameState.Playing:
