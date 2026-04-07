@@ -21,8 +21,15 @@ public class SceneController : MonoBehaviour
     }
 
 
-    private void Start()
+    // making these helpers to avoid rewriting this stuff a ton
+    public void LoadMainRoom()
     {
+        SceneManager.LoadScene("MainRoom"); 
+    }
 
+    
+    public void LoadPuzzleRoom(string roomName)
+    {
+        SceneManager.LoadScene(roomName);
     }
 }
