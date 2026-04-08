@@ -7,7 +7,7 @@ public enum FsmPuzzleState
     Completed,
 }
 
-public class ChandlerRoom : PuzzleManager
+public class ChandlerRoom : MonoBehaviour
 {
     // each room is a simple switch case FSM that calls 
     // complete room function in superclass 

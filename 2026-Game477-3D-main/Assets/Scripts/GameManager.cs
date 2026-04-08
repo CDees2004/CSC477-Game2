@@ -2,7 +2,7 @@ using NUnit.Framework;
 using UnityEngine;
 using GameState = FsmGameState;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public enum FsmGameState
 {
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public GameState GameState { get; private set; }
     // set in inspector 
-    public GameObject pausedPanelUI;
+    //public GameObject pausedPanelUI;
     public int totalPuzzles = 1; // change to 4 after all added 
 
     private static HashSet<string> completedPuzzles = null;
@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        if(completedPuzzles == null)
+        if (completedPuzzles == null)
         {
-            completedPuzzles = new(); 
+            completedPuzzles = new();
         }
     }
 
@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour
         GameState = GameState.MainMenu;
         DontDestroyOnLoad(gameObject); // making the GameManager persist across scenes
     }
-
 
     private void Update()
     {
@@ -53,17 +52,17 @@ public class GameManager : MonoBehaviour
 
             case GameState.Playing:
                 Time.timeScale = 1.0f;
-                pausedPanelUI.SetActive(false); 
+                PauseUI.Instance.pauseUIPanel.SetActive(false);
                 break;
 
             case GameState.Paused:
                 Time.timeScale = 0.0f;
-                pausedPanelUI.SetActive(true); 
+                PauseUI.Instance.pauseUIPanel.SetActive(true);
                 break;
 
             case GameState.GameOver:
                 // do whatever and go to the gameover screen
-                SceneManager.LoadScene("GameOver"); 
+                SceneManager.LoadScene("GameOver");
                 break;
 
             case GameState.Win:
@@ -73,25 +72,22 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
     public void ChangeState(GameState newState)
     {
         GameState = newState;
     }
 
-
     public void MarkPuzzleComplete(string puzzleName)
     {
         completedPuzzles.Add(puzzleName);
-        CheckWinCondition(); 
+        CheckWinCondition();
     }
-
 
     public void CheckWinCondition()
     {
-        if(completedPuzzles.Count >= totalPuzzles)
+        if (completedPuzzles.Count >= totalPuzzles)
         {
-            ChangeState(FsmGameState.Win); 
+            ChangeState(FsmGameState.Win);
         }
     }
 }
