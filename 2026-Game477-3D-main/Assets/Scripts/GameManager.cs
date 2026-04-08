@@ -22,15 +22,22 @@ public class GameManager : MonoBehaviour
     public GameState GameState { get; private set; }
     // set in inspector 
     public GameObject pausedPanelUI;
-    public int totalPuzzles = 4;
+    public int totalPuzzles = 1; // change to 4 after all added 
 
-    private HashSet<string> completedPuzzles = new HashSet<string>();
+    private static HashSet<string> completedPuzzles = null;
 
+    private void Awake()
+    {
+        Instance = this;
+        if(completedPuzzles == null)
+        {
+            completedPuzzles = new(); 
+        }
+    }
 
     private void Start()
     {
         GameState = GameState.MainMenu;
-        Instance = this;
         DontDestroyOnLoad(gameObject); // making the GameManager persist across scenes
     }
 

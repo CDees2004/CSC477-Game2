@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class RoomPuzzle : MonoBehaviour
+public class PuzzleManager : MonoBehaviour
 {
     // each puzzle needs some unique ID 
+    // set in inspector 
     public string puzzleName; 
     public bool isCompleted { get; private set; }
 

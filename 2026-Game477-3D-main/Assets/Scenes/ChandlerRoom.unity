@@ -200,7 +200,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac9db7752f3682c4d8cdcca1fb220d08, type: 2}
+  - {fileID: 2100000, guid: 1f39cfdc69f2c422ca6645f9a6f7c254, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -248,12 +248,12 @@ MonoBehaviour:
   isPaintingEnabled: 0
   currentEditor: 
   materials:
-  - {fileID: 2100000, guid: ac9db7752f3682c4d8cdcca1fb220d08, type: 2}
+  - {fileID: 2100000, guid: 1f39cfdc69f2c422ca6645f9a6f7c254, type: 2}
   materialsPath:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_2248bec7-4cf0-40ce-ac80-b32b8a4ee9b9
+    name: UM_OperatedMesh_d74961de-bd4c-472e-9786-8b700cdcc104
     skinnedMesh: 0
     sharedMesh: {fileID: 327862644}
     buidVersion:
@@ -266,7 +266,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 2248bec7-4cf0-40ce-ac80-b32b8a4ee9b9
+  sourceMeshRendererGUID: d74961de-bd4c-472e-9786-8b700cdcc104
   guid: 36b1777e-25b9-4822-b745-6378b8b5bd8b
   localOptions:
     RecalculateTangents: 0
@@ -453,51 +453,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194248340}
   m_CullTransparentMesh: 1
---- !u!1 &256717409
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 256717411}
-  - component: {fileID: 256717410}
-  m_Layer: 0
-  m_Name: 166d2de0-14ce-48e9-9087-dfb01ed34337
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &256717410
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256717409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &256717411
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256717409}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294203773
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,8 +553,16 @@ PrefabInstance:
       value: 20241001
       objectReference: {fileID: 0}
     - target: {fileID: 2862278905927072855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.21022
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862278905927072855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.y
       value: 10.346317
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862278905927072855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -23.948792
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -615,7 +578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.3
+      value: 27.25
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -623,11 +586,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.9
+      value: -16.63
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -635,7 +598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalRotation.z
@@ -647,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1251,7 +1214,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac9db7752f3682c4d8cdcca1fb220d08, type: 2}
+  - {fileID: 2100000, guid: 8e0550821f7bc1e4f9ded10fc17b28b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1299,12 +1262,12 @@ MonoBehaviour:
   isPaintingEnabled: 0
   currentEditor: 
   materials:
-  - {fileID: 2100000, guid: ac9db7752f3682c4d8cdcca1fb220d08, type: 2}
+  - {fileID: 2100000, guid: 8e0550821f7bc1e4f9ded10fc17b28b6, type: 2}
   materialsPath:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_11db917d-84b9-49df-b8c0-2b9975b8c4df
+    name: UM_OperatedMesh_cfe82337-8322-4388-b7d3-eb63d3da47e5
     skinnedMesh: 0
     sharedMesh: {fileID: 1687787781}
     buidVersion:
@@ -1317,7 +1280,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 11db917d-84b9-49df-b8c0-2b9975b8c4df
+  sourceMeshRendererGUID: cfe82337-8322-4388-b7d3-eb63d3da47e5
   guid: b0ec2ee3-f233-40c9-bc3b-62600b57c28d
   localOptions:
     RecalculateTangents: 0
@@ -1862,9 +1825,9 @@ GameObject:
   - component: {fileID: 831169468}
   - component: {fileID: 831169466}
   - component: {fileID: 831169472}
-  - component: {fileID: 831169473}
+  - component: {fileID: 831169474}
   m_Layer: 0
-  m_Name: Number Card
+  m_Name: DEBUG - ClickToWinItem
   m_TagString: Clickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1990,7 +1953,7 @@ MonoBehaviour:
   - Assets/Materials/Card Number.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_c4f7eb48-e2c6-42b1-8cfe-23d3b8dd28b7
+    name: UM_OperatedMesh_507755f0-79c1-4bdc-ad20-ea2615554953
     skinnedMesh: 0
     sharedMesh: {fileID: 640979561}
     buidVersion:
@@ -2003,7 +1966,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: c4f7eb48-e2c6-42b1-8cfe-23d3b8dd28b7
+  sourceMeshRendererGUID: 507755f0-79c1-4bdc-ad20-ea2615554953
   guid: 15fda7d9-1d30-4599-bc4d-e0754d0989de
   localOptions:
     RecalculateTangents: 0
@@ -2046,7 +2009,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6197498, y: 0.0310719, z: 0.31065845}
   m_Center: {x: 0.3098749, y: 0.0015535951, z: -0.15532923}
---- !u!114 &831169473
+--- !u!114 &831169474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2055,10 +2018,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 831169464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66106d31791f9c94780239e588f70a0e, type: 3}
+  m_Script: {fileID: 11500000, guid: fe9d7ada5f2d4434a8b448593bc120e6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InventoryItem_Card
-  sprHud: {fileID: 1039572830, guid: a91be92b7922f4760a2895a345a87ef2, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryItem_Puzzle
+  sprHud: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,51 +2097,6 @@ MonoBehaviour:
     IndexVersion: 19
     OptimizedTopology: 0
     TransformVersion: 13
---- !u!1 &926943424
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 926943426}
-  - component: {fileID: 926943425}
-  m_Layer: 0
-  m_Name: e78da421-d65d-4e7f-9409-f0d116036c11
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &926943425
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926943424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &926943426
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926943424}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &981483890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,7 +2138,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_e93792bc-4887-401e-bce3-4a20699e1927
+    name: UM_OperatedMesh_3ad5342a-82c8-4d72-b478-6d6c643214a4
     skinnedMesh: 0
     sharedMesh: {fileID: 1027728270}
     buidVersion:
@@ -2233,7 +2151,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: e93792bc-4887-401e-bce3-4a20699e1927
+  sourceMeshRendererGUID: 3ad5342a-82c8-4d72-b478-6d6c643214a4
   guid: 02051ca8-56e1-492b-823e-8d09ec84467c
   localOptions:
     RecalculateTangents: 0
@@ -2783,6 +2701,52 @@ MonoBehaviour:
     IndexVersion: 178
     OptimizedTopology: 0
     TransformVersion: 167
+--- !u!1 &1200342972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1200342974}
+  - component: {fileID: 1200342973}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1200342973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200342972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf5a6648592b3c43b59b35a9b7bb7d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  pausedPanelUI: {fileID: 0}
+  totalPuzzles: 1
+--- !u!4 &1200342974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200342972}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1081.3973, y: -0.00001, z: 62.27642}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1258536337
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,51 +3206,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1 &1606350755
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1606350757}
-  - component: {fileID: 1606350756}
-  m_Layer: 0
-  m_Name: 1a7da549-a175-4a4d-be03-ef1570c7194e
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1606350756
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606350755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1606350757
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606350755}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1687787781
 Mesh:
   m_ObjectHideFlags: 0
@@ -3620,7 +3539,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 50eca892a8d47aa458f60add141507c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3809,7 +3728,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac9db7752f3682c4d8cdcca1fb220d08, type: 2}
+  - {fileID: 2100000, guid: 8e0550821f7bc1e4f9ded10fc17b28b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3857,12 +3776,12 @@ MonoBehaviour:
   isPaintingEnabled: 0
   currentEditor: 
   materials:
-  - {fileID: 2100000, guid: ac9db7752f3682c4d8cdcca1fb220d08, type: 2}
+  - {fileID: 2100000, guid: 8e0550821f7bc1e4f9ded10fc17b28b6, type: 2}
   materialsPath:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_c86dbe42-44dc-4205-b068-4e2dcb74f1ee
+    name: UM_OperatedMesh_7c135e20-165b-48a6-bc8d-0901e75b247c
     skinnedMesh: 0
     sharedMesh: {fileID: 1526597818}
     buidVersion:
@@ -3875,7 +3794,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: c86dbe42-44dc-4205-b068-4e2dcb74f1ee
+  sourceMeshRendererGUID: 7c135e20-165b-48a6-bc8d-0901e75b247c
   guid: c28f15ff-411c-4d36-bbf9-a23b05b7c10d
   localOptions:
     RecalculateTangents: 0
@@ -3944,7 +3863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1833442186
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4023,7 +3942,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_41faf55f-a312-4364-8ff2-510c8175e2b9
+    name: UM_OperatedMesh_d0f47748-0daa-43e4-a960-198bc1d89bdb
     skinnedMesh: 0
     sharedMesh: {fileID: 707802881}
     buidVersion:
@@ -4036,7 +3955,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 41faf55f-a312-4364-8ff2-510c8175e2b9
+  sourceMeshRendererGUID: d0f47748-0daa-43e4-a960-198bc1d89bdb
   guid: 97c7046b-6eac-4ada-a822-c7a1a92e399d
   localOptions:
     RecalculateTangents: 0
@@ -4134,7 +4053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
   sprHud: {fileID: 0}
---- !u!1 &1866145367
+--- !u!1 &1996717417
 GameObject:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4142,35 +4061,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1866145369}
-  - component: {fileID: 1866145368}
+  - component: {fileID: 1996717419}
+  - component: {fileID: 1996717418}
   m_Layer: 0
-  m_Name: bc4a6218-05a4-4f11-88e3-426a3f891828
+  m_Name: 6d538e66-700d-4315-87b7-08646444f6a8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1866145368
+--- !u!114 &1996717418
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866145367}
+  m_GameObject: {fileID: 1996717417}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
   items: []
---- !u!4 &1866145369
+--- !u!4 &1996717419
 Transform:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866145367}
+  m_GameObject: {fileID: 1996717417}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -4375,7 +4294,5 @@ SceneRoots:
   - {fileID: 1386509341}
   - {fileID: 1086940344}
   - {fileID: 2100918648}
-  - {fileID: 256717411}
-  - {fileID: 1606350757}
-  - {fileID: 926943426}
-  - {fileID: 1866145369}
+  - {fileID: 1996717419}
+  - {fileID: 1200342974}
