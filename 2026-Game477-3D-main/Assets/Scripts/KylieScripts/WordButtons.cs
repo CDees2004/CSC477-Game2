@@ -7,7 +7,6 @@ public class WordButtons : MonoBehaviour
     public TMP_Text buttonText;
     public void Grab()
     {
-        print("button clicked");
         print(buttonText.text);
         if (buttonText.text == "dry")
         {
@@ -16,6 +15,14 @@ public class WordButtons : MonoBehaviour
         else if (buttonText.text == "rainy")
         {
             room.WaterChangeState(WaterPuzzleStates.RAINY);
+        }
+        else if (buttonText.text == "sun")
+        {
+            room.SkyChangeState(SkyPuzzleStates.DAY);
+        }
+        else if (buttonText.text == "moon")
+        {
+            room.SkyChangeState(SkyPuzzleStates.NIGHT);
         }
     }
 }
