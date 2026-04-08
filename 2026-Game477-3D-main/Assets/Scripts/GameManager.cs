@@ -47,32 +47,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        switch (GameState)
+        if(GameState == GameState.Playing)
         {
-            case GameState.MainMenu:
-                // main menu logic 
-                // initial scene shouldn't need anything
-                break;
-
-            case GameState.Playing:
-                PlayingLogic();
-                break;
-
-            case GameState.Paused:
-                PausedLogic();
-                break;
-
-            case GameState.GameOver:
-                // go back to hub room, do whatever, go to end screen 
-                Time.timeScale = 1.0f;
-                SceneManager.LoadScene("GameOver");
-                break;
-
-            case GameState.Win:
-                // go back to hub room, do whatever, go to end screen
-                Time.timeScale = 1.0f;
-                SceneManager.LoadScene("Escaped");
-                break;
+            PlayingLogic(); // might not need to be in update
         }
     }
 
@@ -93,18 +70,43 @@ public class GameManager : MonoBehaviour
 
     public void ChangeState(GameState newState)
     {
-        GameState = newState;
-        if(newState != GameState.Playing)
-        {
-            // letting the user have their mouse back
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
+        // prevent redundant changes
+        if (GameState == newState) return;
 
-        else
+        GameState = newState;
+
+        switch (GameState)
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false; 
+            case GameState.MainMenu:
+                Time.timeScale = 1.0f;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                SceneManager.LoadScene("MainMenu");
+                break;
+
+            case GameState.Playing:
+                Time.timeScale = 1.0f;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                break;
+
+            case GameState.Paused:
+                Time.timeScale = 1.0f;
+                break;
+
+            case GameState.GameOver:
+                Time.timeScale = 1.0f;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                SceneManager.LoadScene("GameOver");
+                break;
+
+            case GameState.Win:
+                Time.timeScale = 1.0f;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                SceneManager.LoadScene("Escaped");
+                break;
         }
     }
 
