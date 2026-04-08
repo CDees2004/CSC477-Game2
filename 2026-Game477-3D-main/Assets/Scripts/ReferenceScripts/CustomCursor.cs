@@ -58,4 +58,10 @@ public class CustomCursor : MonoBehaviour
             }
         }
     }
+
+    private void OnDisable()
+    {
+        input.Disable();
+        input.UI.Disable();
+    }
 }
