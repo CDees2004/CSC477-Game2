@@ -49,6 +49,7 @@ public class KylieRoom : MonoBehaviour
     public GameObject deadrabbit;
     public GameObject yellowjewel;
     public GameObject redjewel;
+    public GameObject key;
 
     private bool blueJewelCollect;
     private bool yellowJewelCollect;
@@ -63,6 +64,7 @@ public class KylieRoom : MonoBehaviour
         AState = AnimalState.FED;
         redjewel.SetActive(false);
         yellowjewel.SetActive(false);
+        key.SetActive(false);
     }
 
     private void Update()
@@ -149,7 +151,7 @@ public class KylieRoom : MonoBehaviour
 
         if (redJewelCollect == true && blueJewelCollect == true && yellowJewelCollect == true)
         {
-            SceneManager.LoadScene("MainRoom");
+            key.SetActive(true);
         }
     }
 
