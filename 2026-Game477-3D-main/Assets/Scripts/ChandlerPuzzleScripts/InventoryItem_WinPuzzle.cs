@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InventoryItem_Puzzle : InventoryItem
+public class InventoryItem_WinPuzzle : InventoryItem
 {
     // using this item to complete the puzzle 
     public override void Use()
