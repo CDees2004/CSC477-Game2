@@ -1,0 +1,4714 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 2
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 1
+    m_PVRFilteringGaussRadiusAO: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &13971482
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13971484}
+  - component: {fileID: 13971483}
+  m_Layer: 0
+  m_Name: 3a4baba3-b7a7-4132-8a84-921f964170c0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &13971483
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13971482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &13971484
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13971482}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &28216171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [6]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700230
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700230
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 0
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!114 &62378177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [7]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700231
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700231
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 0
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!114 &100816200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [14]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700238
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700238
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 1
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!1 &115147094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 115147097}
+  - component: {fileID: 115147096}
+  - component: {fileID: 115147095}
+  - component: {fileID: 115147098}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &115147095
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115147094}
+  m_Enabled: 1
+--- !u!20 &115147096
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115147094}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &115147097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115147094}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &115147098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115147094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
+--- !u!1 &161448351
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 161448353}
+  - component: {fileID: 161448352}
+  m_Layer: 0
+  m_Name: UMXCommandServiceCache_58a31ee2-9f22-4647-a48d-0ba93e4e601f
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &161448352
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161448351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1704387285, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandServiceCache
+  counter: 24
+  commandObjects:
+  - {fileID: 1718214697}
+  - {fileID: 590783837}
+  - {fileID: 696802249}
+  - {fileID: 1627689929}
+  - {fileID: 1917783930}
+  - {fileID: 28216171}
+  - {fileID: 62378177}
+  - {fileID: 1569315360}
+  - {fileID: 1260848818}
+  - {fileID: 1595650060}
+  - {fileID: 900557233}
+  - {fileID: 319857931}
+  - {fileID: 100816200}
+  - {fileID: 1744849819}
+  - {fileID: 1005829389}
+  - {fileID: 1471694820}
+  - {fileID: 1645318076}
+  - {fileID: 468261177}
+  - {fileID: 551133129}
+  - {fileID: 994052466}
+--- !u!4 &161448353
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161448351}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &319857931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [13]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700237
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700237
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 0c000000080000000000000009000000040000000d00000002000000060000000a000000010000000b000000050000000300000007000000
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 0
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!114 &468261177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'SelectToolCommand [19]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700243
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700243
+      type: {class: SelectToolCommand, ns: Tripolygon.UModelerX.Editor, asm: Tripolygon.UModelerX.Editor}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        ownerTypeName: Tripolygon.UModelerX.Editor.Modelings.ModelingEditor, Tripolygon.UModelerX.Editor,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+        toolTypeName: Tripolygon.UModelerX.Editor.Modelings.EdgeFlipTool, Tripolygon.UModelerX.Editor,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldToolTypeName: Tripolygon.UModelerX.Editor.Modelings.VertexTool, Tripolygon.UModelerX.Editor,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &477853679
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 477853681}
+  - component: {fileID: 477853680}
+  m_Layer: 0
+  m_Name: UModelerXEditableMeshCache_aff56238-1ded-4de5-837c-543ba3c4de72
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &477853680
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477853679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 231059012, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXEditableMeshCache
+  items: []
+  sourceMeshes: []
+  lastHotspotLayout: {fileID: 0}
+--- !u!4 &477853681
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477853679}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &551133129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'SelectToolCommand [20]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700244
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700244
+      type: {class: SelectToolCommand, ns: Tripolygon.UModelerX.Editor, asm: Tripolygon.UModelerX.Editor}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        ownerTypeName: Tripolygon.UModelerX.Editor.Modelings.ModelingEditor, Tripolygon.UModelerX.Editor,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+        toolTypeName: Tripolygon.UModelerX.Editor.Modelings.FaceNormalTool, Tripolygon.UModelerX.Editor,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldToolTypeName: Tripolygon.UModelerX.Editor.Modelings.EdgeFlipTool, Tripolygon.UModelerX.Editor,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &590783837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'MovePivotCommand [1]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700225
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700225
+      type: {class: MovePivotCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OldPosition>k__BackingField: {x: 0, y: 0, z: 0}
+        <NewPosition>k__BackingField: {x: -0.33250856, y: 0, z: -10.252264}
+--- !u!114 &696802249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'MovePivotCommand [2]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700226
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700226
+      type: {class: MovePivotCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OldPosition>k__BackingField: {x: -0.33250856, y: 0, z: -10.252264}
+        <NewPosition>k__BackingField: {x: -0.039714336, y: 0, z: -9.984914}
+--- !u!114 &900557233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [12]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700236
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700236
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 0c000000080000000000000009000000040000000d00000002000000060000000a000000010000000b000000050000000300000007000000
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 1
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!114 &994052466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'FaceNormalCommand [21]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700245
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700245
+      type: {class: FaceNormalCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 1
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <EdMesh>k__BackingField: {fileID: 0}
+        <LoopIDs>k__BackingField: 
+        <SetNormal>k__BackingField: 1
+        <BackupNormals>k__BackingField: []
+        Normals: []
+--- !u!114 &1005829389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [16]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700240
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700240
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 1
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!1 &1089609456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089609458}
+  - component: {fileID: 1089609457}
+  - component: {fileID: 1089609459}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1089609457
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089609456}
+  m_Enabled: 1
+  serializedVersion: 12
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!4 &1089609458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089609456}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1089609459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089609456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
+--- !u!114 &1260848818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [9]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700233
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700233
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 1
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!114 &1319560444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 392268477, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.SourceMesh
+  edMesh: {fileID: 1742362834}
+  sourceGUID: 
+  lastOperatedBuildVersion:
+    ModifierGUID: 9a5ca5aa-b62c-4fc6-85f5-e4df1c573209
+    PosVersion: 415
+    ColorVersion: 415
+    UVVersion: 415
+    BoneWeightVersion: 415
+    IndexVersion: 10
+    OptimizedTopology: 0
+    TransformVersion: 8
+  renderableMesh:
+    name: 
+    skinnedMesh: 0
+    sharedMesh: {fileID: 0}
+    buidVersion:
+      ModifierGUID: 
+      PosVersion: 0
+      ColorVersion: 0
+      UVVersion: 0
+      BoneWeightVersion: 0
+      IndexVersion: 0
+      OptimizedTopology: 0
+      TransformVersion: 0
+  elemSelection:
+    SelectionVersion: 87
+    HighlightVertexID: -1
+    HighlightEdgeID: -1
+    HighlightFaceID: -1
+    HighlightUVID: -1
+    HighlightUVLoopID: -1
+    HighlightUVFaceID: -1
+    IsUVFaceSelection: 1
+    IsRiggingSelection: 0
+    UVMaterial: -1
+    uvChannel: 0
+    serializeVertexIDs: 0000000001000000020000000300000004000000050000000600000007000000
+    serializeEdgeIDs: 
+    serializeFaceIDs: 
+  materialsPath: []
+  enableRiggingData: 0
+  riggingData:
+    modelTransform: {fileID: 0}
+    rootBone: {fileID: 0}
+    skinnedMeshRendererRootBone: {fileID: 0}
+    boneTree:
+      riggingBones: []
+      rootRiggingBone:
+        isSelected: 0
+        matrix:
+          e00: 0
+          e01: 0
+          e02: 0
+          e03: 0
+          e10: 0
+          e11: 0
+          e12: 0
+          e13: 0
+          e20: 0
+          e21: 0
+          e22: 0
+          e23: 0
+          e30: 0
+          e31: 0
+          e32: 0
+          e33: 0
+        transform: {fileID: 0}
+        parentIndex: 0
+        childrenIndex: 
+        depth: 0
+      selectedBones: []
+    AllBonesPoseTRS: []
+    allBonesPoseLocalTRS: []
+    allBonesTransform: []
+    riggingExtraDataCollection: []
+    avatarData:
+      upperArmTwist: 0
+      lowerArmTwist: 0
+      upperLegTwist: 0
+      lowerLegTwist: 0
+      armStretch: 0
+      legStretch: 0
+      feetSpacing: 0
+      hasTranslationDoF: 0
+    allBonesPoseName: []
+    AllTransformNames:
+      allBonesPoseName: []
+      rootBoneName:
+        pathNames: []
+      skinnedMeshRendererRootBoneName:
+        pathNames: []
+    rootBoneName:
+      pathNames: []
+    bindBonesPose: []
+    bindBonesName: []
+    _boneBuildData:
+      guidePoint: []
+      midInfo5: 
+      guideLine: 
+      boneName: []
+      symmetryInfo: 
+      rootBone: {fileID: 0}
+      midPoint: []
+  SelectedIDs: 
+  LastClickedID: 0
+  ExpandedIDs: 
+  texturepaintdata: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &1471694820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [17]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700241
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700241
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 0c000000080000000000000009000000040000000d00000002000000060000000a000000010000000b000000050000000300000007000000
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 0
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!114 &1544054512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1149407877, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.EdMeshShelf
+  backup:
+    Vertices: []
+    VertexHeaders: []
+    Positions: []
+    BoneWeights: []
+    Colors: []
+    Edges: []
+    EdgeHeaders: []
+    Loops: []
+    LoopNormals: []
+    LoopHeaders: []
+    Faces: []
+    FaceHeaders: []
+    FaceHoles: []
+    FaceHoleHeaders: []
+    UVs: []
+    UVHeaders: []
+    UVCoords: []
+    FaceUVParams: []
+    FaceUVParamHeaders: []
+    FaceColors: []
+    FaceColorsHeaders: []
+    FaceHotspot: []
+    FaceHotspotHeaders: []
+    LoopCustomNormal: []
+    LoopCustomNormalHeaders: []
+    EdgeFlag: []
+    EdgeFlagHeaders: []
+    FaceTriangulationHints: []
+    FaceTriangulationHintHeaders: []
+  KillIDSet:
+    serializedVertexIDSet: 
+    serializedEdgeIDSet: 
+    serializedLoopIDSet: 
+    serializedFaceIDSet: 
+    serializedFaceHoleIDSet: 
+    serializedUVIDSet: 
+  CreateIDSet:
+    serializedVertexIDSet: 0000000001000000020000000300000004000000050000000600000007000000
+    serializedEdgeIDSet: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+    serializedLoopIDSet: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000150000001600000017000000
+    serializedFaceIDSet: 000000000100000002000000030000000400000005000000
+    serializedFaceHoleIDSet: 
+    serializedUVIDSet: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d000000
+  modified:
+    Vertices:
+    - edge: 0
+      renderableFlags: 0
+    - edge: 0
+      renderableFlags: 0
+    - edge: 2
+      renderableFlags: 0
+    - edge: 4
+      renderableFlags: 0
+    - edge: 1
+      renderableFlags: 0
+    - edge: 4
+      renderableFlags: 0
+    - edge: 5
+      renderableFlags: 0
+    - edge: 6
+      renderableFlags: 0
+    VertexHeaders:
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 6
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 7
+      alive: 1
+      deadElemStackIndex: -1
+    Positions:
+    - {x: 0, y: 0, z: -16.381435}
+    - {x: 0, y: 6.781347, z: -16.381435}
+    - {x: 0, y: 0, z: 0}
+    - {x: -18.910553, y: 0, z: -16.381435}
+    - {x: 0, y: 6.781347, z: 0}
+    - {x: -18.910553, y: 6.781347, z: -16.381435}
+    - {x: -18.910553, y: 0, z: 0}
+    - {x: -18.910553, y: 6.781347, z: 0}
+    BoneWeights: []
+    Colors: []
+    Edges:
+    - v0: 0
+      v1: 1
+      loop: 8
+      v0DLPrevEdge: 8
+      v0DLNextEdge: 3
+      v1DLPrevEdge: 9
+      v1DLNextEdge: 1
+      renderableFlags: 0
+    - v0: 2
+      v1: 0
+      loop: 16
+      v0DLPrevEdge: 2
+      v0DLNextEdge: 11
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 8
+      renderableFlags: 0
+    - v0: 0
+      v1: 4
+      loop: 19
+      v0DLPrevEdge: 3
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 5
+      v1DLNextEdge: 4
+      renderableFlags: 0
+    - v0: 1
+      v1: 3
+      loop: 20
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 9
+      v1DLPrevEdge: 10
+      v1DLNextEdge: 2
+      renderableFlags: 0
+    - v0: 5
+      v1: 1
+      loop: 21
+      v0DLPrevEdge: 7
+      v0DLNextEdge: 4
+      v1DLPrevEdge: 1
+      v1DLNextEdge: 0
+      renderableFlags: 0
+    - v0: 3
+      v1: 2
+      loop: 12
+      v0DLPrevEdge: 1
+      v0DLNextEdge: 10
+      v1DLPrevEdge: 11
+      v1DLNextEdge: 3
+      renderableFlags: 0
+    - v0: 6
+      v1: 2
+      loop: 17
+      v0DLPrevEdge: 6
+      v0DLNextEdge: 5
+      v1DLPrevEdge: 3
+      v1DLNextEdge: 2
+      renderableFlags: 0
+    - v0: 3
+      v1: 7
+      loop: 23
+      v0DLPrevEdge: 2
+      v0DLNextEdge: 1
+      v1DLPrevEdge: 7
+      v1DLNextEdge: 6
+      renderableFlags: 0
+    - v0: 5
+      v1: 4
+      loop: 10
+      v0DLPrevEdge: 9
+      v0DLNextEdge: 7
+      v1DLPrevEdge: 8
+      v1DLNextEdge: 5
+      renderableFlags: 0
+    - v0: 4
+      v1: 6
+      loop: 18
+      v0DLPrevEdge: 4
+      v0DLNextEdge: 8
+      v1DLPrevEdge: 11
+      v1DLNextEdge: 6
+      renderableFlags: 0
+    - v0: 7
+      v1: 5
+      loop: 22
+      v0DLPrevEdge: 6
+      v0DLNextEdge: 10
+      v1DLPrevEdge: 4
+      v1DLNextEdge: 9
+      renderableFlags: 0
+    - v0: 6
+      v1: 7
+      loop: 14
+      v0DLPrevEdge: 5
+      v0DLNextEdge: 11
+      v1DLPrevEdge: 10
+      v1DLNextEdge: 7
+      renderableFlags: 0
+    EdgeHeaders:
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 8
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 9
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 11
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 10
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 7
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 6
+      alive: 1
+      deadElemStackIndex: -1
+    Loops:
+    - vertex: 0
+      edge: 0
+      face: 2
+      uv: 12
+      faceHole: -1
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 11
+      loopNext: 9
+    - vertex: 1
+      edge: 0
+      face: 0
+      uv: 9
+      faceHole: -1
+      radialPrev: 8
+      radialNext: 8
+      loopPrev: 3
+      loopNext: 1
+    - vertex: 2
+      edge: 3
+      face: 4
+      uv: 2
+      faceHole: -1
+      radialPrev: 3
+      radialNext: 3
+      loopPrev: 19
+      loopNext: 17
+    - vertex: 0
+      edge: 3
+      face: 0
+      uv: 8
+      faceHole: -1
+      radialPrev: 16
+      radialNext: 16
+      loopPrev: 2
+      loopNext: 0
+    - vertex: 0
+      edge: 8
+      face: 4
+      uv: 0
+      faceHole: -1
+      radialPrev: 9
+      radialNext: 9
+      loopPrev: 18
+      loopNext: 16
+    - vertex: 4
+      edge: 8
+      face: 2
+      uv: 10
+      faceHole: -1
+      radialPrev: 19
+      radialNext: 19
+      loopPrev: 8
+      loopNext: 10
+    - vertex: 1
+      edge: 1
+      face: 5
+      uv: 4
+      faceHole: -1
+      radialPrev: 1
+      radialNext: 1
+      loopPrev: 23
+      loopNext: 21
+    - vertex: 3
+      edge: 1
+      face: 0
+      uv: 6
+      faceHole: -1
+      radialPrev: 20
+      radialNext: 20
+      loopPrev: 0
+      loopNext: 2
+    - vertex: 5
+      edge: 9
+      face: 5
+      uv: 5
+      faceHole: -1
+      radialPrev: 11
+      radialNext: 11
+      loopPrev: 20
+      loopNext: 22
+    - vertex: 1
+      edge: 9
+      face: 2
+      uv: 13
+      faceHole: -1
+      radialPrev: 21
+      radialNext: 21
+      loopPrev: 10
+      loopNext: 8
+    - vertex: 3
+      edge: 2
+      face: 3
+      uv: 6
+      faceHole: -1
+      radialPrev: 2
+      radialNext: 2
+      loopPrev: 15
+      loopNext: 13
+    - vertex: 2
+      edge: 2
+      face: 0
+      uv: 2
+      faceHole: -1
+      radialPrev: 12
+      radialNext: 12
+      loopPrev: 1
+      loopNext: 3
+    - vertex: 6
+      edge: 11
+      face: 4
+      uv: 3
+      faceHole: -1
+      radialPrev: 15
+      radialNext: 15
+      loopPrev: 16
+      loopNext: 18
+    - vertex: 2
+      edge: 11
+      face: 3
+      uv: 2
+      faceHole: -1
+      radialPrev: 17
+      radialNext: 17
+      loopPrev: 14
+      loopNext: 12
+    - vertex: 3
+      edge: 10
+      face: 5
+      uv: 6
+      faceHole: -1
+      radialPrev: 13
+      radialNext: 13
+      loopPrev: 22
+      loopNext: 20
+    - vertex: 7
+      edge: 10
+      face: 3
+      uv: 7
+      faceHole: -1
+      radialPrev: 23
+      radialNext: 23
+      loopPrev: 12
+      loopNext: 14
+    - vertex: 5
+      edge: 4
+      face: 2
+      uv: 11
+      faceHole: -1
+      radialPrev: 4
+      radialNext: 4
+      loopPrev: 9
+      loopNext: 11
+    - vertex: 4
+      edge: 4
+      face: 1
+      uv: 10
+      faceHole: -1
+      radialPrev: 10
+      radialNext: 10
+      loopPrev: 7
+      loopNext: 5
+    - vertex: 4
+      edge: 5
+      face: 4
+      uv: 1
+      faceHole: -1
+      radialPrev: 5
+      radialNext: 5
+      loopPrev: 17
+      loopNext: 19
+    - vertex: 6
+      edge: 5
+      face: 1
+      uv: 3
+      faceHole: -1
+      radialPrev: 18
+      radialNext: 18
+      loopPrev: 4
+      loopNext: 6
+    - vertex: 7
+      edge: 7
+      face: 5
+      uv: 7
+      faceHole: -1
+      radialPrev: 7
+      radialNext: 7
+      loopPrev: 21
+      loopNext: 23
+    - vertex: 5
+      edge: 7
+      face: 1
+      uv: 11
+      faceHole: -1
+      radialPrev: 22
+      radialNext: 22
+      loopPrev: 6
+      loopNext: 4
+    - vertex: 6
+      edge: 6
+      face: 3
+      uv: 3
+      faceHole: -1
+      radialPrev: 6
+      radialNext: 6
+      loopPrev: 13
+      loopNext: 15
+    - vertex: 7
+      edge: 6
+      face: 1
+      uv: 7
+      faceHole: -1
+      radialPrev: 14
+      radialNext: 14
+      loopPrev: 5
+      loopNext: 7
+    LoopNormals: []
+    LoopHeaders:
+    - id: 8
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 16
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 19
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 9
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 20
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 21
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 11
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 12
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 17
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 15
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 23
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 13
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 10
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 18
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 22
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 7
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 14
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 6
+      alive: 1
+      deadElemStackIndex: -1
+    Faces:
+    - entryLoop: 8
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 0
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 16
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 20
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 12
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 4
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    FaceHeaders:
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    FaceHoles: []
+    FaceHoleHeaders: []
+    UVs:
+    - vertex: 0
+    - vertex: 1
+    - vertex: 2
+    - vertex: 0
+    - vertex: 0
+    - vertex: 4
+    - vertex: 1
+    - vertex: 3
+    - vertex: 5
+    - vertex: 1
+    - vertex: 6
+    - vertex: 7
+    - vertex: 5
+    - vertex: 4
+    UVHeaders:
+    - id: 12
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 9
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 8
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 10
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 6
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 13
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 7
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 11
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    UVCoords:
+    - {x: 1, y: 0.33333334}
+    - {x: 0, y: 0.6666667}
+    - {x: 0.25, y: 0.33333334}
+    - {x: 0, y: 0.33333334}
+    - {x: 0.25, y: 0}
+    - {x: 0.75, y: 0.33333334}
+    - {x: 0.25, y: 1}
+    - {x: 0.25, y: 0.6666666}
+    - {x: 0.5, y: 1}
+    - {x: 1, y: 0.6666667}
+    - {x: 0.5, y: 0.33333334}
+    - {x: 0.5, y: 0.6666666}
+    - {x: 0.75, y: 0.6666667}
+    - {x: 0.5, y: 0}
+    FaceUVParams: []
+    FaceUVParamHeaders: []
+    FaceColors: []
+    FaceColorsHeaders: []
+    FaceHotspot: []
+    FaceHotspotHeaders: []
+    LoopCustomNormal: []
+    LoopCustomNormalHeaders: []
+    EdgeFlag: []
+    EdgeFlagHeaders: []
+    FaceTriangulationHints: []
+    FaceTriangulationHintHeaders: []
+    VertexSize: 0
+    EdgeSize: 0
+    LoopSize: 0
+    FaceSize: 0
+    FaceHoleSize: 0
+    UVSize: 0
+  edMesh: {fileID: 1742362834}
+  stageClear: 5
+--- !u!114 &1569315360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'SelectToolCommand [8]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700232
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700232
+      type: {class: SelectToolCommand, ns: Tripolygon.UModelerX.Editor, asm: Tripolygon.UModelerX.Editor}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        ownerTypeName: Tripolygon.UModelerX.Editor.Modelings.ModelingEditor, Tripolygon.UModelerX.Editor,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+        toolTypeName: Tripolygon.UModelerX.Editor.Modelings.VertexTool, Tripolygon.UModelerX.Editor,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldToolTypeName: Tripolygon.UModelerX.Editor.Modelings.BoxTool, Tripolygon.UModelerX.Editor,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1595650060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [11]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700235
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700235
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 0c000000080000000000000009000000040000000d00000002000000060000000a000000010000000b000000050000000300000007000000
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 1
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!114 &1627689929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'BoxCommand [3]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700227
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700227
+      type: {class: BoxCommand, ns: Tripolygon.UModelerX.Editor.Modelings, asm: Tripolygon.UModelerX.Editor}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <edMeshShelf>k__BackingField: {fileID: 1544054512}
+        <Pos0>k__BackingField: {x: 0, y: 0}
+        <Pos1>k__BackingField: {x: 16.381435, y: 18.910553}
+        <Width>k__BackingField: 18.910553
+        <Depth>k__BackingField: 16.381435
+        <Height>k__BackingField: 6.781347
+        <Plane>k__BackingField:
+          normal: {x: 0, y: 1, z: 0}
+          distance: -0
+        <WidthSegs>k__BackingField: 1
+        <DepthSegs>k__BackingField: 1
+        <HeightSegs>k__BackingField: 1
+        <AutoUnwrap>k__BackingField: 1
+        BottomFaces: 04000000
+        vertices: 0000000001000000020000000300000004000000050000000600000007000000
+        validationVertices: 0000000001000000020000000300000004000000050000000600000007000000
+--- !u!114 &1645318076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [18]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700242
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700242
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 1
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!114 &1718214697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ChangeNameCommand [0]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700224
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700224
+      type: {class: ChangeNameCommand, ns: Tripolygon.UModelerX.Editor, asm: Tripolygon.UModelerX.Editor}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        oldName: UModelerX Object
+        newName: Box
+--- !u!114 &1742362834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 621858184, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.EdMesh
+  vertexPool:
+    arrayValidSize: 16
+    revivalCount: 0
+    headers:
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 6
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 7
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 8
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 9
+      alive: 0
+      deadElemStackIndex: 1
+    - id: 10
+      alive: 0
+      deadElemStackIndex: 2
+    - id: 11
+      alive: 0
+      deadElemStackIndex: 3
+    - id: 12
+      alive: 0
+      deadElemStackIndex: 4
+    - id: 13
+      alive: 0
+      deadElemStackIndex: 5
+    - id: 14
+      alive: 0
+      deadElemStackIndex: 6
+    - id: 15
+      alive: 0
+      deadElemStackIndex: 7
+    deadElemStack:
+      array: 08000000090000000a0000000b0000000c0000000d0000000e0000000f000000
+      size: 8
+    vertices:
+    - edge: 0
+      renderableFlags: 0
+    - edge: 0
+      renderableFlags: 0
+    - edge: 2
+      renderableFlags: 0
+    - edge: 1
+      renderableFlags: 0
+    - edge: 4
+      renderableFlags: 0
+    - edge: 4
+      renderableFlags: 0
+    - edge: 5
+      renderableFlags: 0
+    - edge: 6
+      renderableFlags: 0
+    - edge: 12
+      renderableFlags: 0
+    - edge: 12
+      renderableFlags: 0
+    - edge: 14
+      renderableFlags: 0
+    - edge: 13
+      renderableFlags: 0
+    - edge: 16
+      renderableFlags: 0
+    - edge: 16
+      renderableFlags: 0
+    - edge: 17
+      renderableFlags: 0
+    - edge: 18
+      renderableFlags: 0
+    positions:
+    - {x: 0, y: 0, z: -16.381435}
+    - {x: 0, y: 6.781347, z: -16.381435}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 6.781347, z: 0}
+    - {x: -18.910553, y: 0, z: -16.381435}
+    - {x: -18.910553, y: 6.781347, z: -16.381435}
+    - {x: -18.910553, y: 0, z: 0}
+    - {x: -18.910553, y: 6.781347, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    colors: []
+    boneWeights: []
+    activateBuffer: 3
+    boneIndex: 0
+    defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  edgePool:
+    arrayValidSize: 24
+    revivalCount: 0
+    headers:
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 6
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 7
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 8
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 9
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 10
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 11
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 12
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 13
+      alive: 0
+      deadElemStackIndex: 1
+    - id: 14
+      alive: 0
+      deadElemStackIndex: 2
+    - id: 15
+      alive: 0
+      deadElemStackIndex: 3
+    - id: 16
+      alive: 0
+      deadElemStackIndex: 4
+    - id: 17
+      alive: 0
+      deadElemStackIndex: 5
+    - id: 18
+      alive: 0
+      deadElemStackIndex: 6
+    - id: 19
+      alive: 0
+      deadElemStackIndex: 7
+    - id: 20
+      alive: 0
+      deadElemStackIndex: 8
+    - id: 21
+      alive: 0
+      deadElemStackIndex: 9
+    - id: 22
+      alive: 0
+      deadElemStackIndex: 10
+    - id: 23
+      alive: 0
+      deadElemStackIndex: 11
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    deadElemStack:
+      array: 0c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000000000000000000000000000000000000
+      size: 12
+    edges:
+    - v0: 0
+      v1: 1
+      loop: 8
+      v0DLPrevEdge: 8
+      v0DLNextEdge: 3
+      v1DLPrevEdge: 9
+      v1DLNextEdge: 1
+      renderableFlags: 0
+    - v0: 1
+      v1: 3
+      loop: 20
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 9
+      v1DLPrevEdge: 10
+      v1DLNextEdge: 2
+      renderableFlags: 0
+    - v0: 3
+      v1: 2
+      loop: 12
+      v0DLPrevEdge: 1
+      v0DLNextEdge: 10
+      v1DLPrevEdge: 11
+      v1DLNextEdge: 3
+      renderableFlags: 0
+    - v0: 2
+      v1: 0
+      loop: 16
+      v0DLPrevEdge: 2
+      v0DLNextEdge: 11
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 8
+      renderableFlags: 0
+    - v0: 5
+      v1: 4
+      loop: 10
+      v0DLPrevEdge: 9
+      v0DLNextEdge: 7
+      v1DLPrevEdge: 8
+      v1DLNextEdge: 5
+      renderableFlags: 0
+    - v0: 4
+      v1: 6
+      loop: 18
+      v0DLPrevEdge: 4
+      v0DLNextEdge: 8
+      v1DLPrevEdge: 11
+      v1DLNextEdge: 6
+      renderableFlags: 0
+    - v0: 6
+      v1: 7
+      loop: 14
+      v0DLPrevEdge: 5
+      v0DLNextEdge: 11
+      v1DLPrevEdge: 10
+      v1DLNextEdge: 7
+      renderableFlags: 0
+    - v0: 7
+      v1: 5
+      loop: 22
+      v0DLPrevEdge: 6
+      v0DLNextEdge: 10
+      v1DLPrevEdge: 4
+      v1DLNextEdge: 9
+      renderableFlags: 0
+    - v0: 0
+      v1: 4
+      loop: 19
+      v0DLPrevEdge: 3
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 5
+      v1DLNextEdge: 4
+      renderableFlags: 0
+    - v0: 5
+      v1: 1
+      loop: 21
+      v0DLPrevEdge: 7
+      v0DLNextEdge: 4
+      v1DLPrevEdge: 1
+      v1DLNextEdge: 0
+      renderableFlags: 0
+    - v0: 3
+      v1: 7
+      loop: 23
+      v0DLPrevEdge: 2
+      v0DLNextEdge: 1
+      v1DLPrevEdge: 7
+      v1DLNextEdge: 6
+      renderableFlags: 0
+    - v0: 6
+      v1: 2
+      loop: 17
+      v0DLPrevEdge: 6
+      v0DLNextEdge: 5
+      v1DLPrevEdge: 3
+      v1DLNextEdge: 2
+      renderableFlags: 0
+    - v0: 8
+      v1: 9
+      loop: 32
+      v0DLPrevEdge: 20
+      v0DLNextEdge: 15
+      v1DLPrevEdge: 21
+      v1DLNextEdge: 13
+      renderableFlags: 0
+    - v0: 9
+      v1: 11
+      loop: 44
+      v0DLPrevEdge: 12
+      v0DLNextEdge: 21
+      v1DLPrevEdge: 22
+      v1DLNextEdge: 14
+      renderableFlags: 0
+    - v0: 11
+      v1: 10
+      loop: 36
+      v0DLPrevEdge: 13
+      v0DLNextEdge: 22
+      v1DLPrevEdge: 23
+      v1DLNextEdge: 15
+      renderableFlags: 0
+    - v0: 10
+      v1: 8
+      loop: 40
+      v0DLPrevEdge: 14
+      v0DLNextEdge: 23
+      v1DLPrevEdge: 12
+      v1DLNextEdge: 20
+      renderableFlags: 0
+    - v0: 13
+      v1: 12
+      loop: 34
+      v0DLPrevEdge: 21
+      v0DLNextEdge: 19
+      v1DLPrevEdge: 20
+      v1DLNextEdge: 17
+      renderableFlags: 0
+    - v0: 12
+      v1: 14
+      loop: 42
+      v0DLPrevEdge: 16
+      v0DLNextEdge: 20
+      v1DLPrevEdge: 23
+      v1DLNextEdge: 18
+      renderableFlags: 0
+    - v0: 14
+      v1: 15
+      loop: 38
+      v0DLPrevEdge: 17
+      v0DLNextEdge: 23
+      v1DLPrevEdge: 22
+      v1DLNextEdge: 19
+      renderableFlags: 0
+    - v0: 15
+      v1: 13
+      loop: 46
+      v0DLPrevEdge: 18
+      v0DLNextEdge: 22
+      v1DLPrevEdge: 16
+      v1DLNextEdge: 21
+      renderableFlags: 0
+    - v0: 8
+      v1: 12
+      loop: 43
+      v0DLPrevEdge: 15
+      v0DLNextEdge: 12
+      v1DLPrevEdge: 17
+      v1DLNextEdge: 16
+      renderableFlags: 0
+    - v0: 13
+      v1: 9
+      loop: 45
+      v0DLPrevEdge: 19
+      v0DLNextEdge: 16
+      v1DLPrevEdge: 13
+      v1DLNextEdge: 12
+      renderableFlags: 0
+    - v0: 11
+      v1: 15
+      loop: 47
+      v0DLPrevEdge: 14
+      v0DLNextEdge: 13
+      v1DLPrevEdge: 19
+      v1DLNextEdge: 18
+      renderableFlags: 0
+    - v0: 14
+      v1: 10
+      loop: 41
+      v0DLPrevEdge: 18
+      v0DLNextEdge: 17
+      v1DLPrevEdge: 15
+      v1DLNextEdge: 14
+      renderableFlags: 0
+    - v0: 0
+      v1: 0
+      loop: 0
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 0
+      renderableFlags: 0
+    - v0: 0
+      v1: 0
+      loop: 0
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 0
+      renderableFlags: 0
+    - v0: 0
+      v1: 0
+      loop: 0
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 0
+      renderableFlags: 0
+    - v0: 0
+      v1: 0
+      loop: 0
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 0
+      renderableFlags: 0
+    - v0: 0
+      v1: 0
+      loop: 0
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 0
+      renderableFlags: 0
+    - v0: 0
+      v1: 0
+      loop: 0
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 0
+      renderableFlags: 0
+    - v0: 0
+      v1: 0
+      loop: 0
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 0
+      renderableFlags: 0
+    - v0: 0
+      v1: 0
+      loop: 0
+      v0DLPrevEdge: 0
+      v0DLNextEdge: 0
+      v1DLPrevEdge: 0
+      v1DLNextEdge: 0
+      renderableFlags: 0
+  loopPool:
+    arrayValidSize: 48
+    revivalCount: 0
+    headers:
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 6
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 7
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 8
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 9
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 10
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 11
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 12
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 13
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 14
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 15
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 16
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 17
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 18
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 19
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 20
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 21
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 22
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 23
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 24
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 25
+      alive: 0
+      deadElemStackIndex: 1
+    - id: 26
+      alive: 0
+      deadElemStackIndex: 2
+    - id: 27
+      alive: 0
+      deadElemStackIndex: 3
+    - id: 28
+      alive: 0
+      deadElemStackIndex: 4
+    - id: 29
+      alive: 0
+      deadElemStackIndex: 5
+    - id: 30
+      alive: 0
+      deadElemStackIndex: 6
+    - id: 31
+      alive: 0
+      deadElemStackIndex: 7
+    - id: 32
+      alive: 0
+      deadElemStackIndex: 8
+    - id: 33
+      alive: 0
+      deadElemStackIndex: 9
+    - id: 34
+      alive: 0
+      deadElemStackIndex: 10
+    - id: 35
+      alive: 0
+      deadElemStackIndex: 11
+    - id: 36
+      alive: 0
+      deadElemStackIndex: 12
+    - id: 37
+      alive: 0
+      deadElemStackIndex: 13
+    - id: 38
+      alive: 0
+      deadElemStackIndex: 14
+    - id: 39
+      alive: 0
+      deadElemStackIndex: 15
+    - id: 40
+      alive: 0
+      deadElemStackIndex: 16
+    - id: 41
+      alive: 0
+      deadElemStackIndex: 17
+    - id: 42
+      alive: 0
+      deadElemStackIndex: 18
+    - id: 43
+      alive: 0
+      deadElemStackIndex: 19
+    - id: 44
+      alive: 0
+      deadElemStackIndex: 20
+    - id: 45
+      alive: 0
+      deadElemStackIndex: 21
+    - id: 46
+      alive: 0
+      deadElemStackIndex: 22
+    - id: 47
+      alive: 0
+      deadElemStackIndex: 23
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    deadElemStack:
+      array: 18000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f0000000000000000000000000000000000000000000000000000000000000000000000
+      size: 24
+    loops:
+    - vertex: 1
+      edge: 0
+      face: 0
+      uv: 9
+      faceHole: -1
+      radialPrev: 8
+      radialNext: 8
+      loopPrev: 3
+      loopNext: 1
+    - vertex: 3
+      edge: 1
+      face: 0
+      uv: 6
+      faceHole: -1
+      radialPrev: 20
+      radialNext: 20
+      loopPrev: 0
+      loopNext: 2
+    - vertex: 2
+      edge: 2
+      face: 0
+      uv: 2
+      faceHole: -1
+      radialPrev: 12
+      radialNext: 12
+      loopPrev: 1
+      loopNext: 3
+    - vertex: 0
+      edge: 3
+      face: 0
+      uv: 8
+      faceHole: -1
+      radialPrev: 16
+      radialNext: 16
+      loopPrev: 2
+      loopNext: 0
+    - vertex: 4
+      edge: 4
+      face: 1
+      uv: 10
+      faceHole: -1
+      radialPrev: 10
+      radialNext: 10
+      loopPrev: 7
+      loopNext: 5
+    - vertex: 6
+      edge: 5
+      face: 1
+      uv: 3
+      faceHole: -1
+      radialPrev: 18
+      radialNext: 18
+      loopPrev: 4
+      loopNext: 6
+    - vertex: 7
+      edge: 6
+      face: 1
+      uv: 7
+      faceHole: -1
+      radialPrev: 14
+      radialNext: 14
+      loopPrev: 5
+      loopNext: 7
+    - vertex: 5
+      edge: 7
+      face: 1
+      uv: 11
+      faceHole: -1
+      radialPrev: 22
+      radialNext: 22
+      loopPrev: 6
+      loopNext: 4
+    - vertex: 0
+      edge: 0
+      face: 2
+      uv: 12
+      faceHole: -1
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 11
+      loopNext: 9
+    - vertex: 4
+      edge: 8
+      face: 2
+      uv: 10
+      faceHole: -1
+      radialPrev: 19
+      radialNext: 19
+      loopPrev: 8
+      loopNext: 10
+    - vertex: 5
+      edge: 4
+      face: 2
+      uv: 11
+      faceHole: -1
+      radialPrev: 4
+      radialNext: 4
+      loopPrev: 9
+      loopNext: 11
+    - vertex: 1
+      edge: 9
+      face: 2
+      uv: 13
+      faceHole: -1
+      radialPrev: 21
+      radialNext: 21
+      loopPrev: 10
+      loopNext: 8
+    - vertex: 3
+      edge: 2
+      face: 3
+      uv: 6
+      faceHole: -1
+      radialPrev: 2
+      radialNext: 2
+      loopPrev: 15
+      loopNext: 13
+    - vertex: 7
+      edge: 10
+      face: 3
+      uv: 7
+      faceHole: -1
+      radialPrev: 23
+      radialNext: 23
+      loopPrev: 12
+      loopNext: 14
+    - vertex: 6
+      edge: 6
+      face: 3
+      uv: 3
+      faceHole: -1
+      radialPrev: 6
+      radialNext: 6
+      loopPrev: 13
+      loopNext: 15
+    - vertex: 2
+      edge: 11
+      face: 3
+      uv: 2
+      faceHole: -1
+      radialPrev: 17
+      radialNext: 17
+      loopPrev: 14
+      loopNext: 12
+    - vertex: 2
+      edge: 3
+      face: 4
+      uv: 2
+      faceHole: -1
+      radialPrev: 3
+      radialNext: 3
+      loopPrev: 19
+      loopNext: 17
+    - vertex: 6
+      edge: 11
+      face: 4
+      uv: 3
+      faceHole: -1
+      radialPrev: 15
+      radialNext: 15
+      loopPrev: 16
+      loopNext: 18
+    - vertex: 4
+      edge: 5
+      face: 4
+      uv: 1
+      faceHole: -1
+      radialPrev: 5
+      radialNext: 5
+      loopPrev: 17
+      loopNext: 19
+    - vertex: 0
+      edge: 8
+      face: 4
+      uv: 0
+      faceHole: -1
+      radialPrev: 9
+      radialNext: 9
+      loopPrev: 18
+      loopNext: 16
+    - vertex: 1
+      edge: 1
+      face: 5
+      uv: 4
+      faceHole: -1
+      radialPrev: 1
+      radialNext: 1
+      loopPrev: 23
+      loopNext: 21
+    - vertex: 5
+      edge: 9
+      face: 5
+      uv: 5
+      faceHole: -1
+      radialPrev: 11
+      radialNext: 11
+      loopPrev: 20
+      loopNext: 22
+    - vertex: 7
+      edge: 7
+      face: 5
+      uv: 7
+      faceHole: -1
+      radialPrev: 7
+      radialNext: 7
+      loopPrev: 21
+      loopNext: 23
+    - vertex: 3
+      edge: 10
+      face: 5
+      uv: 6
+      faceHole: -1
+      radialPrev: 13
+      radialNext: 13
+      loopPrev: 22
+      loopNext: 20
+    - vertex: 9
+      edge: 12
+      face: 6
+      uv: 23
+      faceHole: -1
+      radialPrev: 32
+      radialNext: 32
+      loopPrev: 27
+      loopNext: 25
+    - vertex: 11
+      edge: 13
+      face: 6
+      uv: 20
+      faceHole: -1
+      radialPrev: 44
+      radialNext: 44
+      loopPrev: 24
+      loopNext: 26
+    - vertex: 10
+      edge: 14
+      face: 6
+      uv: 16
+      faceHole: -1
+      radialPrev: 36
+      radialNext: 36
+      loopPrev: 25
+      loopNext: 27
+    - vertex: 8
+      edge: 15
+      face: 6
+      uv: 22
+      faceHole: -1
+      radialPrev: 40
+      radialNext: 40
+      loopPrev: 26
+      loopNext: 24
+    - vertex: 12
+      edge: 16
+      face: 7
+      uv: 24
+      faceHole: -1
+      radialPrev: 34
+      radialNext: 34
+      loopPrev: 31
+      loopNext: 29
+    - vertex: 14
+      edge: 17
+      face: 7
+      uv: 17
+      faceHole: -1
+      radialPrev: 42
+      radialNext: 42
+      loopPrev: 28
+      loopNext: 30
+    - vertex: 15
+      edge: 18
+      face: 7
+      uv: 21
+      faceHole: -1
+      radialPrev: 38
+      radialNext: 38
+      loopPrev: 29
+      loopNext: 31
+    - vertex: 13
+      edge: 19
+      face: 7
+      uv: 25
+      faceHole: -1
+      radialPrev: 46
+      radialNext: 46
+      loopPrev: 30
+      loopNext: 28
+    - vertex: 8
+      edge: 12
+      face: 8
+      uv: 26
+      faceHole: -1
+      radialPrev: 24
+      radialNext: 24
+      loopPrev: 35
+      loopNext: 33
+    - vertex: 12
+      edge: 20
+      face: 8
+      uv: 24
+      faceHole: -1
+      radialPrev: 43
+      radialNext: 43
+      loopPrev: 32
+      loopNext: 34
+    - vertex: 13
+      edge: 16
+      face: 8
+      uv: 25
+      faceHole: -1
+      radialPrev: 28
+      radialNext: 28
+      loopPrev: 33
+      loopNext: 35
+    - vertex: 9
+      edge: 21
+      face: 8
+      uv: 27
+      faceHole: -1
+      radialPrev: 45
+      radialNext: 45
+      loopPrev: 34
+      loopNext: 32
+    - vertex: 11
+      edge: 14
+      face: 9
+      uv: 20
+      faceHole: -1
+      radialPrev: 26
+      radialNext: 26
+      loopPrev: 39
+      loopNext: 37
+    - vertex: 15
+      edge: 22
+      face: 9
+      uv: 21
+      faceHole: -1
+      radialPrev: 47
+      radialNext: 47
+      loopPrev: 36
+      loopNext: 38
+    - vertex: 14
+      edge: 18
+      face: 9
+      uv: 17
+      faceHole: -1
+      radialPrev: 30
+      radialNext: 30
+      loopPrev: 37
+      loopNext: 39
+    - vertex: 10
+      edge: 23
+      face: 9
+      uv: 16
+      faceHole: -1
+      radialPrev: 41
+      radialNext: 41
+      loopPrev: 38
+      loopNext: 36
+    - vertex: 10
+      edge: 15
+      face: 10
+      uv: 16
+      faceHole: -1
+      radialPrev: 27
+      radialNext: 27
+      loopPrev: 43
+      loopNext: 41
+    - vertex: 14
+      edge: 23
+      face: 10
+      uv: 17
+      faceHole: -1
+      radialPrev: 39
+      radialNext: 39
+      loopPrev: 40
+      loopNext: 42
+    - vertex: 12
+      edge: 17
+      face: 10
+      uv: 15
+      faceHole: -1
+      radialPrev: 29
+      radialNext: 29
+      loopPrev: 41
+      loopNext: 43
+    - vertex: 8
+      edge: 20
+      face: 10
+      uv: 14
+      faceHole: -1
+      radialPrev: 33
+      radialNext: 33
+      loopPrev: 42
+      loopNext: 40
+    - vertex: 9
+      edge: 13
+      face: 11
+      uv: 18
+      faceHole: -1
+      radialPrev: 25
+      radialNext: 25
+      loopPrev: 47
+      loopNext: 45
+    - vertex: 13
+      edge: 21
+      face: 11
+      uv: 19
+      faceHole: -1
+      radialPrev: 35
+      radialNext: 35
+      loopPrev: 44
+      loopNext: 46
+    - vertex: 15
+      edge: 19
+      face: 11
+      uv: 21
+      faceHole: -1
+      radialPrev: 31
+      radialNext: 31
+      loopPrev: 45
+      loopNext: 47
+    - vertex: 11
+      edge: 22
+      face: 11
+      uv: 20
+      faceHole: -1
+      radialPrev: 37
+      radialNext: 37
+      loopPrev: 46
+      loopNext: 44
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    - vertex: 0
+      edge: 0
+      face: 0
+      uv: 0
+      faceHole: 0
+      radialPrev: 0
+      radialNext: 0
+      loopPrev: 0
+      loopNext: 0
+    MultiUVChannelUVIDs:
+      multiUVs:
+      - Enabled: 0
+        MultiUVID: 
+      - Enabled: 0
+        MultiUVID: 
+      - Enabled: 0
+        MultiUVID: 
+      - Enabled: 0
+        MultiUVID: 
+      - Enabled: 0
+        MultiUVID: 
+      - Enabled: 0
+        MultiUVID: 
+      - Enabled: 0
+        MultiUVID: 
+      - Enabled: 0
+        MultiUVID: 
+    loopNormals:
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+    - loopNormalEnable: 0
+      loopNormalRotate: {x: 0, y: 0, z: 0, w: 0}
+  facePool:
+    arrayValidSize: 12
+    revivalCount: 0
+    headers:
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 6
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 7
+      alive: 0
+      deadElemStackIndex: 1
+    - id: 8
+      alive: 0
+      deadElemStackIndex: 2
+    - id: 9
+      alive: 0
+      deadElemStackIndex: 3
+    - id: 10
+      alive: 0
+      deadElemStackIndex: 4
+    - id: 11
+      alive: 0
+      deadElemStackIndex: 5
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    deadElemStack:
+      array: 060000000700000008000000090000000a0000000b0000000000000000000000
+      size: 6
+    faces:
+    - entryLoop: 0
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 4
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 8
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 12
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 16
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 20
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 1
+      matID: 0
+    - entryLoop: 24
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+    - entryLoop: 28
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+    - entryLoop: 32
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+    - entryLoop: 36
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+    - entryLoop: 40
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+    - entryLoop: 44
+      entryHole: -1
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+    - entryLoop: 0
+      entryHole: 0
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+    - entryLoop: 0
+      entryHole: 0
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+    - entryLoop: 0
+      entryHole: 0
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+    - entryLoop: 0
+      entryHole: 0
+      renderableFlags: 0
+      smoothingMask: 0
+      unwrappedChannel: 0
+      matID: 0
+  faceHolePool:
+    arrayValidSize: 0
+    revivalCount: 0
+    headers:
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    deadElemStack:
+      array: 
+      size: 0
+    faceHoles:
+    - face: 0
+      entryLoop: 0
+      nextHole: 0
+      prevHole: 0
+    - face: 0
+      entryLoop: 0
+      nextHole: 0
+      prevHole: 0
+    - face: 0
+      entryLoop: 0
+      nextHole: 0
+      prevHole: 0
+    - face: 0
+      entryLoop: 0
+      nextHole: 0
+      prevHole: 0
+  uvPool:
+    arrayValidSize: 28
+    revivalCount: 0
+    headers:
+    - id: 0
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 1
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 2
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 3
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 4
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 5
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 6
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 7
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 8
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 9
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 10
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 11
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 12
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 13
+      alive: 1
+      deadElemStackIndex: -1
+    - id: 14
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 15
+      alive: 0
+      deadElemStackIndex: 1
+    - id: 16
+      alive: 0
+      deadElemStackIndex: 2
+    - id: 17
+      alive: 0
+      deadElemStackIndex: 3
+    - id: 18
+      alive: 0
+      deadElemStackIndex: 4
+    - id: 19
+      alive: 0
+      deadElemStackIndex: 5
+    - id: 20
+      alive: 0
+      deadElemStackIndex: 6
+    - id: 21
+      alive: 0
+      deadElemStackIndex: 7
+    - id: 22
+      alive: 0
+      deadElemStackIndex: 8
+    - id: 23
+      alive: 0
+      deadElemStackIndex: 9
+    - id: 24
+      alive: 0
+      deadElemStackIndex: 10
+    - id: 25
+      alive: 0
+      deadElemStackIndex: 11
+    - id: 26
+      alive: 0
+      deadElemStackIndex: 12
+    - id: 27
+      alive: 0
+      deadElemStackIndex: 13
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    deadElemStack:
+      array: 0e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000000000000000000000
+      size: 14
+    edUVs:
+    - vertex: 0
+    - vertex: 4
+    - vertex: 2
+    - vertex: 6
+    - vertex: 1
+    - vertex: 5
+    - vertex: 3
+    - vertex: 7
+    - vertex: 0
+    - vertex: 1
+    - vertex: 4
+    - vertex: 5
+    - vertex: 0
+    - vertex: 1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: -1
+    - vertex: 0
+    - vertex: 0
+    - vertex: 0
+    - vertex: 0
+    uvs:
+    - {x: 0.25, y: 0}
+    - {x: 0.5, y: 0}
+    - {x: 0.25, y: 0.33333334}
+    - {x: 0.5, y: 0.33333334}
+    - {x: 0.25, y: 1}
+    - {x: 0.5, y: 1}
+    - {x: 0.25, y: 0.6666666}
+    - {x: 0.5, y: 0.6666666}
+    - {x: 0, y: 0.33333334}
+    - {x: 0, y: 0.6666667}
+    - {x: 0.75, y: 0.33333334}
+    - {x: 0.75, y: 0.6666667}
+    - {x: 1, y: 0.33333334}
+    - {x: 1, y: 0.6666667}
+    - {x: 0.25, y: 0}
+    - {x: 0.5, y: 0}
+    - {x: 0.25, y: 0.33333334}
+    - {x: 0.5, y: 0.33333334}
+    - {x: 0.25, y: 1}
+    - {x: 0.5, y: 1}
+    - {x: 0.25, y: 0.6666666}
+    - {x: 0.5, y: 0.6666666}
+    - {x: 0, y: 0.33333334}
+    - {x: 0, y: 0.6666667}
+    - {x: 0.75, y: 0.33333334}
+    - {x: 0.75, y: 0.6666667}
+    - {x: 1, y: 0.33333334}
+    - {x: 1, y: 0.6666667}
+    - {x: 0, y: 0}
+    - {x: 0, y: 0}
+    - {x: 0, y: 0}
+    - {x: 0, y: 0}
+  extraPools: []
+  normalPool:
+    arrayValidSize: 0
+    revivalCount: 0
+    headers:
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    - id: 0
+      alive: 0
+      deadElemStackIndex: 0
+    deadElemStack:
+      array: 
+      size: 0
+    edNormals:
+    - loopID: 0
+    - loopID: 0
+    - loopID: 0
+    - loopID: 0
+    normals:
+    - {x: 0, y: 0, z: 0, w: 0}
+    - {x: 0, y: 0, z: 0, w: 0}
+    - {x: 0, y: 0, z: 0, w: 0}
+    - {x: 0, y: 0, z: 0, w: 0}
+  buildVersion:
+    ModifierGUID: 9a5ca5aa-b62c-4fc6-85f5-e4df1c573209
+    PosVersion: 416
+    ColorVersion: 415
+    UVVersion: 415
+    BoneWeightVersion: 415
+    IndexVersion: 10
+    OptimizedTopology: 0
+    TransformVersion: 8
+  IsRiggingMesh: 0
+  AutoGenerateSmoothNormalToUVChannel: 0
+  AutoGenerateSmoothNormalVectorType: 0
+  autoHotspotUVChannel: 0
+  autoHotspot: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &1744849819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [15]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700239
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700239
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 0000000001000000020000000300000004000000050000000600000007000000
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 0c000000080000000000000009000000040000000d00000002000000060000000a000000010000000b000000050000000300000007000000
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 0
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!114 &1917783930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 314421414, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 'ElemSelectionCommand [4]'
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UMXCommandObject
+  command:
+    rid: 7358799396587700228
+  references:
+    version: 2
+    RefIds:
+    - rid: 7358799396587700228
+      type: {class: ElemSelectionCommand, ns: Tripolygon.UModelerX.Runtime, asm: Tripolygon.UModelerX.Runtime}
+      data:
+        name: 
+        IsUndo: 0
+        modelerMesh: {fileID: 0}
+        modelerMeshInstanceID: -78870
+        sceneHandleIndex: -77792
+        undoRedoSelectObject: 1
+        <sourceMesh>k__BackingField: {fileID: 1319560444}
+        edMeshBackup:
+          Vertices: []
+          VertexHeaders: []
+          Positions: []
+          BoneWeights: []
+          Colors: []
+          Edges: []
+          EdgeHeaders: []
+          Loops: []
+          LoopNormals: []
+          LoopHeaders: []
+          Faces: []
+          FaceHeaders: []
+          FaceHoles: []
+          FaceHoleHeaders: []
+          UVs: []
+          UVHeaders: []
+          UVCoords: []
+          FaceUVParams: []
+          FaceUVParamHeaders: []
+          FaceColors: []
+          FaceColorsHeaders: []
+          FaceHotspot: []
+          FaceHotspotHeaders: []
+          LoopCustomNormal: []
+          LoopCustomNormalHeaders: []
+          EdgeFlag: []
+          EdgeFlagHeaders: []
+          FaceTriangulationHints: []
+          FaceTriangulationHintHeaders: []
+        <OriginalVertexIDs>k__BackingField: 
+        <OriginalEdgeIDs>k__BackingField: 
+        <OriginalFaceIDs>k__BackingField: 
+        <OriginalLoopIDs>k__BackingField: 
+        <OriginalUVIDs>k__BackingField: 
+        <IsSoftSelection>k__BackingField: 0
+        <SoftSelectionCurve>k__BackingField:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        <SelectionRange>k__BackingField: 0
+        <OriginalSoftVertexIDs>k__BackingField: 
+        <OriginalSoftVertexWeights>k__BackingField: []
+        <VertexIDs>k__BackingField: 
+        <EdgeIDs>k__BackingField: 
+        <FaceIDs>k__BackingField: 
+        <VertexGroupIDs>k__BackingField: 
+        <EdgeGroupIDs>k__BackingField: 
+        <FaceGroupIDs>k__BackingField: 
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 115147097}
+  - {fileID: 1089609458}
+  - {fileID: 477853681}
+  - {fileID: 13971484}
+  - {fileID: 161448353}
