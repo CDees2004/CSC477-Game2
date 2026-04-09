@@ -253,7 +253,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_aa853dde-d38d-4750-b5dc-a07a639f7067
+    name: UM_OperatedMesh_b3bf5b03-32f7-43c4-822f-9fbbd4738065
     skinnedMesh: 0
     sharedMesh: {fileID: 327862644}
     buidVersion:
@@ -266,7 +266,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: aa853dde-d38d-4750-b5dc-a07a639f7067
+  sourceMeshRendererGUID: b3bf5b03-32f7-43c4-822f-9fbbd4738065
   guid: 36b1777e-25b9-4822-b745-6378b8b5bd8b
   localOptions:
     RecalculateTangents: 0
@@ -1866,7 +1866,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_fb168ff1-65a5-425e-b8bc-514f164e5c00
+    name: UM_OperatedMesh_78a4ed48-24a6-4d6f-aadf-0f184d25babb
     skinnedMesh: 0
     sharedMesh: {fileID: 1687787781}
     buidVersion:
@@ -1879,7 +1879,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: fb168ff1-65a5-425e-b8bc-514f164e5c00
+  sourceMeshRendererGUID: 78a4ed48-24a6-4d6f-aadf-0f184d25babb
   guid: b0ec2ee3-f233-40c9-bc3b-62600b57c28d
   localOptions:
     RecalculateTangents: 0
@@ -2503,7 +2503,7 @@ GameObject:
   - component: {fileID: 831169472}
   - component: {fileID: 831169474}
   m_Layer: 0
-  m_Name: DEBUG - ClickToWinItem
+  m_Name: WinConditionObject
   m_TagString: Clickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2629,7 +2629,7 @@ MonoBehaviour:
   - Assets/Materials/Card Number.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_ecaf004e-e795-4b64-aae4-b131a939ad3d
+    name: UM_OperatedMesh_b7dad8ca-4115-476e-b7fe-9c40a593c9ce
     skinnedMesh: 0
     sharedMesh: {fileID: 640979561}
     buidVersion:
@@ -2642,7 +2642,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: ecaf004e-e795-4b64-aae4-b131a939ad3d
+  sourceMeshRendererGUID: b7dad8ca-4115-476e-b7fe-9c40a593c9ce
   guid: 15fda7d9-1d30-4599-bc4d-e0754d0989de
   localOptions:
     RecalculateTangents: 0
@@ -2847,7 +2847,7 @@ MonoBehaviour:
   - Assets/Materials/Materials/WoodenWall.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_05ed7915-a0a5-4191-9011-5eb128509a7f
+    name: UM_OperatedMesh_f9bd419f-7ce9-4022-a723-8cd2eb764e87
     skinnedMesh: 0
     sharedMesh: {fileID: 1027728270}
     buidVersion:
@@ -2860,7 +2860,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 05ed7915-a0a5-4191-9011-5eb128509a7f
+  sourceMeshRendererGUID: f9bd419f-7ce9-4022-a723-8cd2eb764e87
   guid: 02051ca8-56e1-492b-823e-8d09ec84467c
   localOptions:
     RecalculateTangents: 0
@@ -3441,6 +3441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   playerInput: {fileID: 0}
+  overrideCursorLock: 0
 --- !u!4 &1200342974
 Transform:
   m_ObjectHideFlags: 0
@@ -4535,7 +4536,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_103b3139-be6f-4026-a9a6-eeaecba358c8
+    name: UM_OperatedMesh_7cbf7dc4-e9f7-4c8f-ae60-caf56b1eeef3
     skinnedMesh: 0
     sharedMesh: {fileID: 1526597818}
     buidVersion:
@@ -4548,7 +4549,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 103b3139-be6f-4026-a9a6-eeaecba358c8
+  sourceMeshRendererGUID: 7cbf7dc4-e9f7-4c8f-ae60-caf56b1eeef3
   guid: c28f15ff-411c-4d36-bbf9-a23b05b7c10d
   localOptions:
     RecalculateTangents: 0
@@ -5091,7 +5092,7 @@ MonoBehaviour:
   - Assets/Materials/Materials/ColorPalette.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_ece67f55-dee2-48c0-8957-98154920e7a4
+    name: UM_OperatedMesh_a56c3e17-6a5d-49cf-ba14-ac3284e2cbbe
     skinnedMesh: 0
     sharedMesh: {fileID: 276473922}
     buidVersion:
@@ -5104,7 +5105,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: ece67f55-dee2-48c0-8957-98154920e7a4
+  sourceMeshRendererGUID: a56c3e17-6a5d-49cf-ba14-ac3284e2cbbe
   guid: fedc9a25-e121-4bbc-ba93-7bd65f9c2213
   localOptions:
     RecalculateTangents: 0
