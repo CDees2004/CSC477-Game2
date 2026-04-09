@@ -24,6 +24,8 @@ public class PianoInteract : MonoBehaviour
     private Quaternion originalCamRot;
     private bool isSitting = false;
 
+    private bool puzzleComplete = false;
+
     private void Awake()
     {
         fpsController = playerBody.GetComponent<FirstPersonController>();
@@ -34,7 +36,7 @@ public class PianoInteract : MonoBehaviour
 
     private void Grab()
     {
-        if (isSitting) return;
+        if (isSitting || puzzleComplete) return;
         StartCoroutine(SitDown());
     }
 
@@ -74,6 +76,7 @@ public class PianoInteract : MonoBehaviour
 
         // show UI
         pianoUI.SetActive(true);
+        GameManager.Instance.overrideCursorLock = true;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -82,6 +85,7 @@ public class PianoInteract : MonoBehaviour
     {
         // hide UI
         pianoUI.SetActive(false);
+        GameManager.Instance.overrideCursorLock = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
@@ -109,5 +113,10 @@ public class PianoInteract : MonoBehaviour
         isSitting = false;
         cinemachineBrain.enabled = true;
         hud.SetActive(true);
+    }
+
+    public void SetPuzzleComplete()
+    {
+        puzzleComplete = true;
     }
 }

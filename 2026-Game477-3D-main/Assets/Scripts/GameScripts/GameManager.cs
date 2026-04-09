@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using UnityEngine;
@@ -27,6 +28,8 @@ public class GameManager : MonoBehaviour
     // I JUST SPENT AN HOUR WONDERING WHY THIS WAS STUCK AT VALUE OF 1
     private int totalPuzzles = 2; // change to 4 after all added 
     public PlayerInput playerInput;
+
+    public bool overrideCursorLock = false;
 
     private static HashSet<string> completedPuzzles = null;
 
@@ -89,13 +92,15 @@ public class GameManager : MonoBehaviour
     // helper functions for state logic  
     private void PlayingLogic()
     {
-        // some things duplicated to make sure 
-        // it repeats every frame 
         Time.timeScale = 1.0f;
-        if (playerInput != null)
-            playerInput.enabled = true;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+
+        if (!overrideCursorLock)
+        {
+            if (playerInput != null)
+                playerInput.enabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     private void PausedLogic()
@@ -187,6 +192,16 @@ public class GameManager : MonoBehaviour
         else
         {
             SceneController.LoadMainRoom();
+        }
+    }
+
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        Debug.Log("GameManager focus: " + hasFocus + " override: " + overrideCursorLock);
+        if (hasFocus && overrideCursorLock)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

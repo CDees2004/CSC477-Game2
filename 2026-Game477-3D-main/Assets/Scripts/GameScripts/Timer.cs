@@ -14,7 +14,6 @@ public class Timer : MonoBehaviour
             return;
 
         gameTimer -= Time.deltaTime;
-        print($"The remaining time is: {gameTimer}");
         UpdateTimerDisplay(); 
 
 
