@@ -8,6 +8,7 @@ public class InventoryItem_Book : InventoryItem
     // room selection panel and buttons
     public GameObject roomPanelUI;
     public GameObject chandlerRoomButton;
+    public string roomname;
     // add other teammate buttons here
 
     private void Start()
@@ -28,6 +29,6 @@ public class InventoryItem_Book : InventoryItem
 
     public override void Use()
     {
-        SceneController.LoadPuzzleRoom("ChandlerRoom"); 
+        SceneController.LoadPuzzleRoom(roomname); 
     }
 }

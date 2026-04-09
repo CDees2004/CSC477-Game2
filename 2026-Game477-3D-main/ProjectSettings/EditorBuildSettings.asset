@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escaped.unity
     guid: dffff666954dac343bd2dbedab4910fc
+  - enabled: 1
+    path: Assets/Scenes/AidanRoom.unity
+    guid: 97fecfa0ff70be84a840b6a0a4eb04a9
+  - enabled: 1
+    path: Assets/Scenes/KylieRoom.unity
+    guid: e854f4ed1b06e6743bd62bf2b5e08678
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

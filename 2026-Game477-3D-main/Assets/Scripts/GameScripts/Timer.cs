@@ -3,7 +3,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public static float gameTimer = 180f;
+    public static float gameTimer = 240f;
     // set in inspector
     [SerializeField] private TextMeshPro timerText; 
 
@@ -14,7 +14,6 @@ public class Timer : MonoBehaviour
             return;
 
         gameTimer -= Time.deltaTime;
-        print($"The remaining time is: {gameTimer}");
         UpdateTimerDisplay(); 
 
 

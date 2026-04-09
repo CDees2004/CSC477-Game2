@@ -13,6 +13,10 @@ public class PianoUI : MonoBehaviour
     public AudioClip[] keyClips;
     public AudioClip wrongClip;
 
+    [Header("References")]
+    public Animator doorAnimator;
+    public PianoInteract pianoInteract;
+
     private string[] solution = { "A", "4", "E", "2", "C" };
     private string[] currentSequence = new string[5];
     private int currentIndex = 0;
@@ -53,8 +57,8 @@ public class PianoUI : MonoBehaviour
             }
         }
 
-        // correct! add puzzleManager call here later
-        Debug.Log("Puzzle complete!");
+        if (doorAnimator != null) doorAnimator.Play("DoorOpen");
+        if (pianoInteract != null) pianoInteract.SetPuzzleComplete();
     }
 
     public void ResetSequence()
@@ -67,10 +71,13 @@ public class PianoUI : MonoBehaviour
 
     private void OnApplicationFocus(bool hasFocus)
     {
+        Debug.Log("Focus changed: " + hasFocus);
         if (hasFocus && gameObject.activeInHierarchy)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
     }
+
+
 }
