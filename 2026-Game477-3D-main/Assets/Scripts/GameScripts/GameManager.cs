@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     public GameState GameState { get; private set; }
     // WHY DOES UNITY IGNORE HARD CODED VALUES IN FAVOR OF INSPECTOR VALUES 
     // I JUST SPENT AN HOUR WONDERING WHY THIS WAS STUCK AT VALUE OF 1
-    private int totalPuzzles = 4; // change to 4 after all added 
+    private int totalPuzzles = 3; // change to 4 after all added 
     public PlayerInput playerInput;
 
     public bool overrideCursorLock = false;
@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
     [Header("Game Over")]
     public GameObject decorationObject;
     public GameObject interactablesObject;
+    public GameObject door;
+    public GameObject portal;
 
     private static HashSet<string> completedPuzzles = null;
 
@@ -94,6 +96,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         playerInput = FindAnyObjectByType<PlayerInput>();
+        portal.SetActive(false);
 
         // trying to maintain cursor focus upon replays 
         if (GameState == GameState.Playing)
@@ -190,7 +193,9 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 1.0f;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                SceneManager.LoadScene("Escaped");
+                door.SetActive(false);
+                portal.SetActive(true);
+                //SceneManager.LoadScene("Escaped");
                 break;
         }
     }
