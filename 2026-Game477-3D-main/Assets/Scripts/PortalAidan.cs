@@ -7,7 +7,7 @@ public class RoomTeleporter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("MainRoom");
+            GameManager.Instance.MarkPuzzleComplete("AidanPuzzle");
         }
     }
 }
