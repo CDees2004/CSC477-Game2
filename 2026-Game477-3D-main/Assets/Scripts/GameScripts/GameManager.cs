@@ -89,11 +89,24 @@ public class GameManager : MonoBehaviour
     // helper functions for state logic  
     private void PlayingLogic()
     {
+        // some things duplicated to make sure 
+        // it repeats every frame 
         Time.timeScale = 1.0f;
         if (playerInput != null)
             playerInput.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    private void PausedLogic()
+    {
+        Time.timeScale = 0.0f;
+        if (playerInput != null)
+        {
+            playerInput.enabled = true;
+        }
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
 
@@ -134,6 +147,8 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 0.0f;
                 if (playerInput != null)
                     playerInput.enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 break;
 
             case GameState.GameOver:

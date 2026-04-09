@@ -1,8 +1,11 @@
 using UnityEngine;
+using TMPro; 
 
 public class Timer : MonoBehaviour
 {
-    public float gameTimer = 180f;
+    public static float gameTimer = 180f;
+    // set in inspector
+    [SerializeField] private TextMeshPro timerText; 
 
     private void Update()
     {
@@ -11,11 +14,23 @@ public class Timer : MonoBehaviour
             return;
 
         gameTimer -= Time.deltaTime;
-        print($"The remaining time is: {gameTimer}"); 
+        print($"The remaining time is: {gameTimer}");
+        UpdateTimerDisplay(); 
+
 
         if(gameTimer < 0)
         {
             GameManager.Instance.ChangeState(FsmGameState.GameOver); 
         }
+    }
+
+    private void UpdateTimerDisplay()
+    {
+        float time = Mathf.Max(gameTimer, 0);
+
+        int minutes = Mathf.FloorToInt(time / 60.0f);
+        int seconds = Mathf.FloorToInt(time % 60.0f);
+
+        timerText.text = $"{minutes} : {seconds}"; 
     }
 }
