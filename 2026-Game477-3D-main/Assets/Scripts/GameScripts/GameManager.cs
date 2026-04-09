@@ -23,7 +23,9 @@ public class GameManager : MonoBehaviour
     // singleton because management script
     public static GameManager Instance { get; private set; }
     public GameState GameState { get; private set; }
-    public int totalPuzzles = 1; // change to 4 after all added 
+    // WHY DOES UNITY IGNORE HARD CODED VALUES IN FAVOR OF INSPECTOR VALUES 
+    // I JUST SPENT AN HOUR WONDERING WHY THIS WAS STUCK AT VALUE OF 1
+    private int totalPuzzles = 2; // change to 4 after all added 
     public PlayerInput playerInput;
 
     private static HashSet<string> completedPuzzles = null;
@@ -69,10 +71,10 @@ public class GameManager : MonoBehaviour
         playerInput = FindAnyObjectByType<PlayerInput>();
 
         // trying to maintain cursor focus upon replays 
-        if(GameState == GameState.Playing)
+        if (GameState == GameState.Playing)
         {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false; 
+            Cursor.visible = false;
         }
     }
 
@@ -94,13 +96,8 @@ public class GameManager : MonoBehaviour
         Cursor.visible = false;
     }
 
-    //private void PausedLogic()
-    //{
-    //    Time.timeScale = 0.0f;
-    //    if (playerInput != null)
-    //        playerInput.enabled = false;
-    //}
 
+    // not currently working
     private void ResetGameProgress()
     {
         if (completedPuzzles != null)
@@ -135,6 +132,8 @@ public class GameManager : MonoBehaviour
 
             case GameState.Paused:
                 Time.timeScale = 0.0f;
+                if (playerInput != null)
+                    playerInput.enabled = false;
                 break;
 
             case GameState.GameOver:
@@ -163,7 +162,16 @@ public class GameManager : MonoBehaviour
     {
         if (completedPuzzles.Count >= totalPuzzles)
         {
+            print($"Amount of completed puzzles is {completedPuzzles.Count}");
+            print($"Amount of puzzles is {totalPuzzles}");
             ChangeState(FsmGameState.Win);
+        }
+
+        // if they complete a puzzle but not all of them, 
+        // return them to the hub room 
+        else
+        {
+            SceneController.LoadMainRoom();
         }
     }
 }

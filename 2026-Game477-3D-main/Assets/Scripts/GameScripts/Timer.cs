@@ -10,8 +10,9 @@ public class Timer : MonoBehaviour
         if (GameManager.Instance.GameState != FsmGameState.Playing)
             return;
 
-        gameTimer -= Time.deltaTime; 
-        
+        gameTimer -= Time.deltaTime;
+        print($"The remaining time is: {gameTimer}"); 
+
         if(gameTimer < 0)
         {
             GameManager.Instance.ChangeState(FsmGameState.GameOver); 
