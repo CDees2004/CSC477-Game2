@@ -8,6 +8,7 @@ public class InventoryItem_Gem : InventoryItem
     {
         room.jewelCollect(color);
         gameObject.SetActive(false);
+        KylieSoundManager.Play(CustomSoundType.GEM);
         //Inventory.Instance.Add(this);
     }
 }
