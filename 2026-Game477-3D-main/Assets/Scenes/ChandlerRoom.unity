@@ -4150,7 +4150,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e656e86f7e96ad94aada0adb0a056c23, type: 2}
+  - {fileID: 2100000, guid: 1d7a178b16b875e46825a510f1f5c4b2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4198,12 +4198,12 @@ MonoBehaviour:
   isPaintingEnabled: 0
   currentEditor: 
   materials:
-  - {fileID: 2100000, guid: e656e86f7e96ad94aada0adb0a056c23, type: 2}
+  - {fileID: 2100000, guid: 1d7a178b16b875e46825a510f1f5c4b2, type: 2}
   materialsPath:
   - Assets/Materials/Materials/BookMaterials/BooksOnShelf.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_4ace4a2a-b595-48d1-baa5-82d1732e53b4
+    name: UM_OperatedMesh_f4df73e7-3ce2-42ba-a1d7-6d2bbbbb5b48
     skinnedMesh: 0
     sharedMesh: {fileID: 634184064}
     buidVersion:
@@ -4216,7 +4216,7 @@ MonoBehaviour:
       OptimizedTopology: 0
       TransformVersion: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 4ace4a2a-b595-48d1-baa5-82d1732e53b4
+  sourceMeshRendererGUID: f4df73e7-3ce2-42ba-a1d7-6d2bbbbb5b48
   guid: 39ce019d-d971-43ec-ac8e-74f70953550c
   localOptions:
     RecalculateTangents: 0
@@ -4233,7 +4233,8 @@ MonoBehaviour:
   saveData: {fileID: 1437551121}
   IsSaveDataLoaded: 0
   <IsDirtySaveData>k__BackingField: 0
-  texturePaintData: []
+  texturePaintData:
+  - {fileID: 0}
   modifierStack:
     modifierList: []
     currentIndex: -1
@@ -5947,6 +5948,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   playerInput: {fileID: 0}
   overrideCursorLock: 0
+  decorationObject: {fileID: 0}
+  interactablesObject: {fileID: 0}
 --- !u!4 &1200342974
 Transform:
   m_ObjectHideFlags: 0
@@ -7348,6 +7351,51 @@ MonoBehaviour:
   modifierStack:
     modifierList: []
     currentIndex: -1
+--- !u!1 &1502067924
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1502067926}
+  - component: {fileID: 1502067925}
+  m_Layer: 0
+  m_Name: 9ab3654d-1afb-40a9-afd1-fee2bb603508
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1502067925
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502067924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &1502067926
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502067924}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1502270259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8538,7 +8586,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 1d7a178b16b875e46825a510f1f5c4b2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8586,7 +8634,7 @@ MonoBehaviour:
   isPaintingEnabled: 0
   currentEditor: 
   materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 1d7a178b16b875e46825a510f1f5c4b2, type: 2}
   materialsPath:
   - Assets/Materials/Materials/BookMaterials/BooksOnShelf.mat
   currentMaterialIndex: 0
@@ -11006,51 +11054,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1 &1987139263
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1987139265}
-  - component: {fileID: 1987139264}
-  m_Layer: 0
-  m_Name: 849b1a31-2770-4834-a207-0401b23993e0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1987139264
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987139263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1987139265
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987139263}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030771415
 GameObject:
   m_ObjectHideFlags: 0
@@ -11701,4 +11704,4 @@ SceneRoots:
   - {fileID: 685550614}
   - {fileID: 817657024}
   - {fileID: 653092067}
-  - {fileID: 1987139265}
+  - {fileID: 1502067926}
