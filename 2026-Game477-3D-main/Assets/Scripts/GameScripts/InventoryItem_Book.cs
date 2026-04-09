@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// NOTE: The red book is the book responsible for going to Chandler's puzzle room
 public class InventoryItem_Book : InventoryItem
 {
     // room selection panel and buttons
