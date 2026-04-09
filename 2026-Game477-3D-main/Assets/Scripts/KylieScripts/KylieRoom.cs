@@ -4,6 +4,8 @@ using UnityEngine;
 using WaterState = WaterPuzzleStates;
 using SkyState = SkyPuzzleStates;
 using CloudState = CloudPuzzleStates;
+using PlantState = PlantPuzzleStates;
+using AnimalState = AnimalPuzzleStates;
 
 public enum WaterPuzzleStates
 {
@@ -20,21 +22,38 @@ public enum CloudPuzzleStates
     CLOUDY,
     CLEAR
 }
+public enum PlantPuzzleStates
+{
+    SCARCE,
+    PLENTY
+}
+public enum AnimalPuzzleStates
+{
+    FED,
+    HUNGRY
+}
 
 public class KylieRoom : PuzzleManager
 {
     public WaterState WState { get; private set; }
     public SkyState SState { get; private set; }
     public CloudState CState { get; private set; }
+    public PlantState PState { get; private set; }
+    public AnimalState AState { get; private set; }
     public GameObject pondwater;
     public GameObject sun;
     public GameObject moon;
     public GameObject clouds;
+    public GameObject rabbit;
+    public GameObject deadrabbit;
 
     private void Start()
     {
         WState = WaterState.RAINY;
         SState = SkyState.DAY;
+        CState = CloudState.CLOUDY;
+        PState = PlantState.SCARCE;
+        AState = AnimalState.FED;
     }
 
     private void Update()
@@ -73,6 +92,29 @@ public class KylieRoom : PuzzleManager
                 clouds.SetActive(false);
                 break;
         }
+
+        switch (PState)
+        {
+            case PlantState.SCARCE:
+                rabbit.SetActive(false);
+                break;
+
+            case PlantState.PLENTY:
+                rabbit.SetActive(true);
+                break;
+        }
+
+        switch (AState)
+        {
+            case AnimalState.FED:
+                deadrabbit.SetActive(false);
+                break;
+
+            case AnimalState.HUNGRY:
+                deadrabbit.SetActive(true);
+                rabbit.SetActive(false);
+                break;
+        }
     }
 
     public void WaterChangeState(WaterState newState)
@@ -86,5 +128,13 @@ public class KylieRoom : PuzzleManager
     public void CloudChangeState(CloudState newState)
     {
         CState = newState;
+    }
+    public void PlantChangeState(PlantState newState)
+    {
+        PState = newState;
+    }
+    public void AnimalChangeState(AnimalState newState)
+    {
+        AState = newState;
     }
 }

@@ -32,5 +32,21 @@ public class WordButtons : MonoBehaviour
         {
             room.CloudChangeState(CloudPuzzleStates.CLEAR);
         }
+        else if (buttonText.text == "plenty")
+        {
+            room.PlantChangeState(PlantPuzzleStates.PLENTY);
+        }
+        else if (buttonText.text == "scarce")
+        {
+            room.PlantChangeState(PlantPuzzleStates.SCARCE);
+        }
+        else if (buttonText.text == "fed")
+        {
+            room.AnimalChangeState(AnimalPuzzleStates.FED);
+        }
+        else if (buttonText.text == "hungry")
+        {
+            room.AnimalChangeState(AnimalPuzzleStates.HUNGRY);
+        }
     }
 }
