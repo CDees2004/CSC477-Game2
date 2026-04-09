@@ -1586,6 +1586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   playerInput: {fileID: 0}
   overrideCursorLock: 0
+  decorationObject: {fileID: 0}
+  interactablesObject: {fileID: 0}
 --- !u!1 &1627961639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,7 +1670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15bf912b0fb7aac40a2543c89d8b3f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::evilLabPuzzleFSM
-  sequence: 0100000002000000
+  sequence: 
   emerald: {fileID: 1058083758}
 --- !u!1 &1765293779
 GameObject:
