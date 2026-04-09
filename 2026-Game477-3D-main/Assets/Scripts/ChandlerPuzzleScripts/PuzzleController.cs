@@ -53,12 +53,12 @@ public class PuzzleController : MonoBehaviour
     public void ChangeState(PuzzleState newState)
     {
         // no redundant swaps 
-        if (PuzzleState == newState) return;
+        //if (PuzzleState == newState) return;
 
-        switch (PuzzleState)
-        {
+        //switch (PuzzleState)
+        //{
 
-        }
+        //}
     }
 
 
