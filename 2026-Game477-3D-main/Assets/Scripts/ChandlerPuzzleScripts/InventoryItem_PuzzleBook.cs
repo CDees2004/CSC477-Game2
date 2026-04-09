@@ -25,6 +25,7 @@ public class InventoryItem_PuzzleBook : InventoryItem
         else
         {
             print("Incorrect Slot");
+            print($"Trying: '{bookID}' ");
         }
     }
 }

@@ -15,7 +15,7 @@ public class PuzzleController : MonoBehaviour
     public static PuzzleController Instance { get; private set; }
     public PuzzleState PuzzleState { get; private set; }
     // a list of book objects
-    public Books[] slots;
+    public BookshelfSlot[] slots;
     // thing we spawn that is used to complete the game 
     public GameObject winObject;
 

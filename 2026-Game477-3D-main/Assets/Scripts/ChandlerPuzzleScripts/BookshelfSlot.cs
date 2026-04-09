@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Books : MonoBehaviour
+public class BookshelfSlot : MonoBehaviour
 {
     // set in inspector 
     public string requiredBookID;
@@ -14,6 +14,7 @@ public class Books : MonoBehaviour
     public bool TryPlace(string bookID)
     {
         if (isFilled) return false;
+        print($"Inventory BookID is {bookID}");
 
         if (bookID == requiredBookID)
         {
