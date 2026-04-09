@@ -30,7 +30,7 @@ public class GameOverUI : MonoBehaviour
     // methods to add functionality to menu buttons 
     private void StartGame()
     {
-        SceneManager.LoadScene("MainRoom");
+        SceneManager.LoadScene("MainMenu");
     }
 
 

@@ -50,4 +50,10 @@ public class Inventory : MonoBehaviour {
     }
     return false;
   }
+
+    private void OnDisable()
+    {
+        input.Disable();
+        input.UI.Disable();
+    }
 }

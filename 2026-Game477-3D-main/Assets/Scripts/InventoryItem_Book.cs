@@ -26,13 +26,6 @@ public class InventoryItem_Book : InventoryItem
 
     public override void Use()
     {
-        print("Used podium");
-        // open the menu to allow for room transportation 
-        //if(roomPanelUI != null)
-        //{
-        //    roomPanelUI.SetActive(true); 
-        //}
-        // changing scene according to book used 
         SceneController.LoadPuzzleRoom("ChandlerRoom"); 
     }
 }
