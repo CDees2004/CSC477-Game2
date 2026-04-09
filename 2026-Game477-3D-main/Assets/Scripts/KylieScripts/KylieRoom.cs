@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using WaterState = WaterPuzzleStates;
 using SkyState = SkyPuzzleStates;
 using CloudState = CloudPuzzleStates;
@@ -46,6 +47,12 @@ public class KylieRoom : PuzzleManager
     public GameObject clouds;
     public GameObject rabbit;
     public GameObject deadrabbit;
+    public GameObject yellowjewel;
+    public GameObject redjewel;
+
+    private bool blueJewelCollect;
+    private bool yellowJewelCollect;
+    private bool redJewelCollect;
 
     private void Start()
     {
@@ -54,6 +61,8 @@ public class KylieRoom : PuzzleManager
         CState = CloudState.CLOUDY;
         PState = PlantState.SCARCE;
         AState = AnimalState.FED;
+        redjewel.SetActive(false);
+        yellowjewel.SetActive(false);
     }
 
     private void Update()
@@ -74,11 +83,19 @@ public class KylieRoom : PuzzleManager
             case SkyState.DAY:
                 moon.SetActive(false);
                 sun.SetActive(true);
+                if (yellowJewelCollect == false)
+                {
+                    yellowjewel.SetActive(false);
+                }
                 break;
 
             case SkyState.NIGHT:
                 moon.SetActive(true);
                 sun.SetActive(false);
+                if (yellowJewelCollect == false)
+                {
+                    yellowjewel.SetActive(true);
+                }
                 break;
         }
 
@@ -100,7 +117,10 @@ public class KylieRoom : PuzzleManager
                 break;
 
             case PlantState.PLENTY:
-                rabbit.SetActive(true);
+                if (AState != AnimalState.HUNGRY)
+                {
+                    rabbit.SetActive(true);
+                }
                 break;
         }
 
@@ -108,12 +128,29 @@ public class KylieRoom : PuzzleManager
         {
             case AnimalState.FED:
                 deadrabbit.SetActive(false);
+                if (redJewelCollect == false)
+                {
+                    redjewel.SetActive(false);
+                }
                 break;
 
             case AnimalState.HUNGRY:
-                deadrabbit.SetActive(true);
-                rabbit.SetActive(false);
+                if (PState == PlantState.PLENTY && SState == SkyState.NIGHT)
+                {
+                    deadrabbit.SetActive(true);
+                    rabbit.SetActive(false);
+                    if (redJewelCollect == false)
+                    {
+                        redjewel.SetActive(true);
+                    }
+                }
                 break;
+        }
+
+        if (redJewelCollect == true && blueJewelCollect == true && yellowJewelCollect == true)
+        {
+            CompletePuzzle();
+            SceneManager.LoadScene("MainRoom");
         }
     }
 
@@ -136,5 +173,21 @@ public class KylieRoom : PuzzleManager
     public void AnimalChangeState(AnimalState newState)
     {
         AState = newState;
+    }
+
+    public void jewelCollect(string color)
+    {
+        if (color == "blue")
+        {
+            blueJewelCollect = true;
+        }
+        else if(color == "red")
+        {
+            redJewelCollect = true;
+        }
+        else if (color == "yellow")
+        {
+            yellowJewelCollect = true;
+        }
     }
 }
