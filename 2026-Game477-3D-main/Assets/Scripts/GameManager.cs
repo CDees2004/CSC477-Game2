@@ -30,42 +30,83 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        // check if an instance already exists 
+        if (Instance != null && Instance != this)
+        {
+            // grab duplicate pause picked up through scenes 
+            PauseUI duplicatePause = GetComponentInChildren<PauseUI>();
+            if (duplicatePause != null)
+            {
+                duplicatePause.CleanupForDestroy();
+            }
+
+            // get rid of the all scenes items if there is already one
+            Destroy(transform.root.gameObject);
+            return;
+        }
+
+        // if its the only instance set it up 
         Instance = this;
+        // and make it persist 
+        DontDestroyOnLoad(transform.root.gameObject);
+
+
         if (completedPuzzles == null)
         {
             completedPuzzles = new();
         }
 
-        playerInput = FindAnyObjectByType<PlayerInput>();
+        // trying to make puzzles reset upon replay 
+        if (completedPuzzles == null) completedPuzzles = new();
+        else completedPuzzles.Clear();
+
+        // possibly dangerous line
+        GameState = GameState.Playing;
     }
 
     private void Start()
     {
-        GameState = GameState.MainMenu;
-        DontDestroyOnLoad(transform.root.gameObject); // making the GameManager persist across scenes
+        playerInput = FindAnyObjectByType<PlayerInput>();
+
+        // trying to maintain cursor focus upon replays 
+        if(GameState == GameState.Playing)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false; 
+        }
     }
 
     private void Update()
     {
-        if(GameState == GameState.Playing)
+        if (GameState == GameState.Playing)
         {
             PlayingLogic(); // might not need to be in update
         }
     }
 
     // helper functions for state logic  
-    public void PlayingLogic()
+    private void PlayingLogic()
     {
         Time.timeScale = 1.0f;
         if (playerInput != null)
             playerInput.enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
-    public void PausedLogic()
+    //private void PausedLogic()
+    //{
+    //    Time.timeScale = 0.0f;
+    //    if (playerInput != null)
+    //        playerInput.enabled = false;
+    //}
+
+    private void ResetGameProgress()
     {
-        Time.timeScale = 0.0f;
-        if (playerInput != null)
-            playerInput.enabled = false;
+        if (completedPuzzles != null)
+        {
+            completedPuzzles.Clear();
+        }
     }
 
     public void ChangeState(GameState newState)
@@ -77,7 +118,9 @@ public class GameManager : MonoBehaviour
 
         switch (GameState)
         {
+            // main menu needs to wipe progress
             case GameState.MainMenu:
+                ResetGameProgress();
                 Time.timeScale = 1.0f;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -91,7 +134,7 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.Paused:
-                Time.timeScale = 1.0f;
+                Time.timeScale = 0.0f;
                 break;
 
             case GameState.GameOver:

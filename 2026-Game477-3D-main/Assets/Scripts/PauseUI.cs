@@ -61,4 +61,24 @@ public class PauseUI : MonoBehaviour
         input.Disable();
         input.UI.Disable();
     }
+
+    private void OnDestroy()
+    {
+        if(input != null)
+        {
+            input.Disable();
+            input.UI.Disable();
+            input = null; 
+        }
+    }
+
+    // attempting to remove the input performance warnings 
+    public void CleanupForDestroy()
+    {
+        if(input != null)
+        {
+            input.UI.Disable();
+            input.Disable();
+        }
+    }
 }
