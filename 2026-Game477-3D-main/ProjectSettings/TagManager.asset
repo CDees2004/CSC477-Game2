@@ -10,6 +10,7 @@ TagManager:
   - number card
   - key
   - Clickable
+  - dynamicColor
   layers:
   - Default
   - TransparentFX
