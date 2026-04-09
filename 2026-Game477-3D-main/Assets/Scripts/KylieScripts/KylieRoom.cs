@@ -34,7 +34,7 @@ public enum AnimalPuzzleStates
     HUNGRY
 }
 
-public class KylieRoom : PuzzleManager
+public class KylieRoom : MonoBehaviour
 {
     public WaterState WState { get; private set; }
     public SkyState SState { get; private set; }
@@ -149,7 +149,6 @@ public class KylieRoom : PuzzleManager
 
         if (redJewelCollect == true && blueJewelCollect == true && yellowJewelCollect == true)
         {
-            CompletePuzzle();
             SceneManager.LoadScene("MainRoom");
         }
     }
