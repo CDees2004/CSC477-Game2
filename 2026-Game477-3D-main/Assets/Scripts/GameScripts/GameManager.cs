@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using UnityEngine;
@@ -31,7 +32,28 @@ public class GameManager : MonoBehaviour
 
     public bool overrideCursorLock = false;
 
+    [Header("Game Over")]
+    public GameObject decorationObject;
+    public GameObject interactablesObject;
+
     private static HashSet<string> completedPuzzles = null;
+
+    private void TriggerGameOverEffects()
+    {
+        if (decorationObject != null) Destroy(decorationObject);
+        if (interactablesObject != null) Destroy(interactablesObject);
+
+        RenderSettings.skybox = null;
+        RenderSettings.ambientLight = new Color(0.2f, 0f, 0f);
+        RenderSettings.fogColor = Color.black;
+        RenderSettings.fog = true;
+    }
+
+    private IEnumerator LoadGameOverDelayed()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("GameOver");
+    }
 
     private void Awake()
     {
@@ -160,7 +182,8 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 1.0f;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                SceneManager.LoadScene("GameOver");
+                TriggerGameOverEffects();
+                StartCoroutine(LoadGameOverDelayed());
                 break;
 
             case GameState.Win:
