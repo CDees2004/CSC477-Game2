@@ -23,6 +23,7 @@ public class PuzzleController : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        PuzzleState = PuzzleState.NoProgress;
     }
 
     public void CheckSolved()
@@ -31,8 +32,9 @@ public class PuzzleController : MonoBehaviour
 
         foreach (var slot in slots)
         {
-            if (!slot.isFilled)
+            if (slot.isFilled)
                 solvedCount++;
+            print($"Solved count: {solvedCount}"); 
         }
 
         // handles the actual puzzle state swapping
