@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using WaterState = WaterPuzzleStates;
 using SkyState = SkyPuzzleStates;
+using CloudState = CloudPuzzleStates;
 
 public enum WaterPuzzleStates
 {
@@ -14,14 +15,21 @@ public enum SkyPuzzleStates
     DAY,
     NIGHT
 }
+public enum CloudPuzzleStates
+{
+    CLOUDY,
+    CLEAR
+}
 
 public class KylieRoom : PuzzleManager
 {
     public WaterState WState { get; private set; }
     public SkyState SState { get; private set; }
+    public CloudState CState { get; private set; }
     public GameObject pondwater;
     public GameObject sun;
     public GameObject moon;
+    public GameObject clouds;
 
     private void Start()
     {
@@ -54,6 +62,17 @@ public class KylieRoom : PuzzleManager
                 sun.SetActive(false);
                 break;
         }
+
+        switch (CState)
+        {
+            case CloudState.CLOUDY:
+                clouds.SetActive(true);
+                break;
+
+            case CloudState.CLEAR:
+                clouds.SetActive(false);
+                break;
+        }
     }
 
     public void WaterChangeState(WaterState newState)
@@ -63,5 +82,9 @@ public class KylieRoom : PuzzleManager
     public void SkyChangeState(SkyState newState)
     {
         SState = newState;
+    }
+    public void CloudChangeState(CloudState newState)
+    {
+        CState = newState;
     }
 }

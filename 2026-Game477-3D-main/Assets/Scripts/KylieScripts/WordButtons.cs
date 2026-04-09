@@ -24,5 +24,13 @@ public class WordButtons : MonoBehaviour
         {
             room.SkyChangeState(SkyPuzzleStates.NIGHT);
         }
+        else if (buttonText.text == "cloudy")
+        {
+            room.CloudChangeState(CloudPuzzleStates.CLOUDY);
+        }
+        else if (buttonText.text == "clear")
+        {
+            room.CloudChangeState(CloudPuzzleStates.CLEAR);
+        }
     }
 }
