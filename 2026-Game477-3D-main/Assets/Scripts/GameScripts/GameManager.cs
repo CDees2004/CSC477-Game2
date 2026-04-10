@@ -199,13 +199,46 @@ public class GameManager : MonoBehaviour
 
             case GameState.Win:
                 Time.timeScale = 1.0f;
-                Cursor.lockState = CursorLockMode.None;
+                Cursor.lockState = CursorLockMode.Locked; // this used to be none Why????
                 Cursor.visible = true;
-                door.SetActive(false);
+                Destroy(door);
                 portal.SetActive(true);
                 //SceneManager.LoadScene("Escaped");
                 break;
         }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        overrideCursorLock = false;
+        playerInput = FindAnyObjectByType<PlayerInput>();
+
+        // re-find portal and door since scene reloaded
+        if (portal != null) portal = null;
+        if (door != null) door = null;
+
+        portal = GameObject.Find("Portal"); // must match exact name
+        door = GameObject.Find("FullDoor"); // must match exact name
+
+        if (portal != null)
+            portal.SetActive(GameState == FsmGameState.Win);
+        if (door != null)
+            door.SetActive(GameState != FsmGameState.Win);
+    }
+
+    public bool IsPuzzleComplete(string puzzleName)
+    {
+        return completedPuzzles.Contains(puzzleName);
     }
 
     public void MarkPuzzleComplete(string puzzleName)
