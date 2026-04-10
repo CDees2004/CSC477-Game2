@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     private void TriggerGameOverEffects()
     {
+        SceneManager.LoadScene("MainRoom");
         if (decorationObject != null) Destroy(decorationObject);
         if (interactablesObject != null) Destroy(interactablesObject);
 
