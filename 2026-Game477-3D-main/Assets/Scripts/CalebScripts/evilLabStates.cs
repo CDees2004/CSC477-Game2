@@ -57,7 +57,7 @@ public class evilLabPuzzleFSM : MonoBehaviour
                 print(key[2]);
 				sequence.Clear();
 				myState = State.IDLE;
-				SceneManager.LoadScene("CalebEvilLab");
+				SceneManager.LoadScene("CalebRoom");
 			} else if (sequence.Count >= 3 && !inaccuracy1 && !inaccuracy2)
 			{
 				emerald.SetActive(true);

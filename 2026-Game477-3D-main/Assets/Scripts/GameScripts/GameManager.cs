@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     public GameState GameState { get; private set; }
     // WHY DOES UNITY IGNORE HARD CODED VALUES IN FAVOR OF INSPECTOR VALUES 
     // I JUST SPENT AN HOUR WONDERING WHY THIS WAS STUCK AT VALUE OF 1
-    private int totalPuzzles = 3; // change to 4 after all added 
+    private int totalPuzzles = 4; // change to 4 after all added 
     public PlayerInput playerInput;
 
     public bool overrideCursorLock = false;
