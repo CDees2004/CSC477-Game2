@@ -3,7 +3,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public static float gameTimer = 240f;
+    public static float gameTimer = 240f; //240
     // set in inspector
     [SerializeField] private TextMeshPro timerText; 
 

@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
     public GameObject door;
     public GameObject portal;
 
+    public GameObject evilBook; //added for gameover sequence
+
     private static HashSet<string> completedPuzzles = null;
 
     private void TriggerGameOverEffects()
@@ -51,6 +53,8 @@ public class GameManager : MonoBehaviour
         RenderSettings.ambientLight = new Color(0.2f, 0f, 0f);
         RenderSettings.fogColor = Color.black;
         RenderSettings.fog = true;
+
+        evilBook.SetActive(true);
     }
 
     private IEnumerator LoadGameOverDelayed()
@@ -193,8 +197,8 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 1.0f;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                TriggerGameOverEffects();
                 StartCoroutine(LoadGameOverDelayed());
+                TriggerGameOverEffects();
                 break;
 
             case GameState.Win:
