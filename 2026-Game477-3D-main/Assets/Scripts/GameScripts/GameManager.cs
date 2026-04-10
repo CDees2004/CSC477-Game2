@@ -213,6 +213,7 @@ public class GameManager : MonoBehaviour
         {
             print($"Amount of completed puzzles is {completedPuzzles.Count}");
             print($"Amount of puzzles is {totalPuzzles}");
+            SceneController.LoadMainRoom();
             ChangeState(FsmGameState.Win);
         }
 
