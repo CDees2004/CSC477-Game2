@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Windows;
 using GameState = FsmGameState;
+using StarterAssets;
 
 public enum FsmGameState
 {
@@ -170,6 +171,10 @@ public class GameManager : MonoBehaviour
 
             case GameState.Playing:
                 Time.timeScale = 1.0f;
+                if (playerInput != null)
+                    playerInput.enabled = true;
+                var fpsPlay = FindAnyObjectByType<StarterAssets.FirstPersonController>();
+                if (fpsPlay != null) fpsPlay.enabled = true;
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 break;
@@ -178,6 +183,8 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 0.0f;
                 if (playerInput != null)
                     playerInput.enabled = false;
+                var fps = FindAnyObjectByType<StarterAssets.FirstPersonController>();
+                if (fps != null) fps.enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 break;
