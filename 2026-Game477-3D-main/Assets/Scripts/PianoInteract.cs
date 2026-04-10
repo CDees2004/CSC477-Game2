@@ -10,7 +10,6 @@ public class PianoInteract : MonoBehaviour
     public GameObject pianoUI;
     public Transform sitTarget;
     public Transform playerBody;
-    public GameObject hud;
 
     [Header("Settings")]
     public float lerpDuration = 1.2f;
@@ -50,7 +49,6 @@ public class PianoInteract : MonoBehaviour
     {
         isSitting = true;
         cinemachineBrain.enabled = false;
-        hud.SetActive(false);
 
         // disable movement
         fpsController.enabled = false;
@@ -75,6 +73,7 @@ public class PianoInteract : MonoBehaviour
         mainCam.transform.rotation = sitTarget.rotation;
 
         // show UI
+        yield return new WaitForSeconds(0.2f);
         pianoUI.SetActive(true);
         GameManager.Instance.overrideCursorLock = true;
         Cursor.lockState = CursorLockMode.None;
@@ -112,7 +111,6 @@ public class PianoInteract : MonoBehaviour
 
         isSitting = false;
         cinemachineBrain.enabled = true;
-        hud.SetActive(true);
     }
 
     public void SetPuzzleComplete()

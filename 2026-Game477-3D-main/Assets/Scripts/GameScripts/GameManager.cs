@@ -226,7 +226,6 @@ public class GameManager : MonoBehaviour
 
     private void OnApplicationFocus(bool hasFocus)
     {
-        Debug.Log("GameManager focus: " + hasFocus + " override: " + overrideCursorLock);
         if (hasFocus && overrideCursorLock)
         {
             Cursor.lockState = CursorLockMode.None;
